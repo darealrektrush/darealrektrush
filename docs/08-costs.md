@@ -2,8 +2,9 @@
 
 > **All figures are planning estimates, order-of-magnitude, in USD.** Provider prices
 > change — verify against live pricing pages before committing. Estimates assume the MVP
-> (single home-service vertical) and reuse of infrastructure already on this account
-> (Supabase org *Project Q*, Vercel hobby team, Render workspace).
+> (single home-service vertical). Infrastructure assumes a **dedicated new Supabase
+> organization** for this business (its own billing entity, fully separate from any
+> existing org), plus the existing Vercel hobby team and Render workspace.
 
 ## 1. Fixed monthly platform cost (MVP)
 

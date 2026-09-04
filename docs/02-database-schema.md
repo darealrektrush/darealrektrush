@@ -1,7 +1,8 @@
 # Deliverable 2 — Database Schema
 
-Target: **Supabase Postgres 17** (org *Project Q*). Uses `pgvector` for evidence/company
-dedupe and semantic search, `pg-boss` for the queue (its own schema), and RLS for the
+Target: **Supabase Postgres 17**, in a **dedicated new organization** created for this
+business (separate billing, members, and blast radius from any existing project). Uses
+`pgvector` for evidence/company dedupe and semantic search, `pg-boss` for the queue (its own schema), and RLS for the
 internal team. Below is the logical model plus reference DDL. This is a **proposal** — no
 migration has been applied.
 

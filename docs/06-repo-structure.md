@@ -70,7 +70,7 @@ automation-opportunity-engine/
 |-------------|---------|
 | `apps/web` | Vercel (hobby team present) |
 | `apps/worker` | Render worker service (uses pre-installed Chromium) |
-| queue + DB + storage | Supabase (Postgres + Storage), org *Project Q* |
+| queue + DB + storage | Supabase (Postgres + Storage), **dedicated new org** |
 | scheduler | Render cron → enqueues discovery / staleness re-runs |
 
 ## Placement in this GitHub repo

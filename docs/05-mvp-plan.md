@@ -32,9 +32,12 @@ outreach (we generate drafts; humans send).
 ## 3. Phased plan
 
 ### Phase 0 — Foundations (½–1 wk)
-- Create a **new Supabase project** in org *Project Q* for this app (keep it separate
-  from `fawkq-bot`). Enable `pgvector`, apply the [02](02-database-schema.md) migration,
-  set up RLS + `app_members`.
+- **Create a dedicated Supabase organization** for this business (dashboard-only step —
+  the Management API does not expose org creation). Then create the project inside it:
+  `automation-opportunity-engine`, region `us-west-1`. This keeps billing, members, and
+  blast radius fully separate from any existing project.
+- Enable `pgvector`, apply the [02](02-database-schema.md) migration, set up RLS +
+  `app_members`.
 - Monorepo scaffold ([06](06-repo-structure.md)), CI, env/secrets, provider registry
   skeleton, `pg-boss` queue on the Supabase DB.
 - Object-storage bucket (Supabase Storage) for page snapshots.

@@ -76,10 +76,8 @@ scope in [05-mvp-plan.md](05-mvp-plan.md).
 
 ## 6. Recommended stack (infrastructure-aware)
 
-Chosen to reuse infrastructure already connected to this account:
-
-- **Database:** Supabase Postgres (org *Project Q* already present) — RLS, Auth,
-  `pgvector` for evidence/dedupe embeddings.
+- **Database:** Supabase Postgres in a **dedicated new organization** for this business
+  — RLS, Auth, `pgvector` for evidence/dedupe embeddings.
 - **Dashboard + API:** Next.js (App Router) on **Vercel** (hobby team present).
 - **Crawlers & workers:** long-running Playwright/crawl work on **Render** (worker
   service + cron) — serverless timeouts on Vercel make it a poor fit for crawling.
@@ -90,3 +88,30 @@ Chosen to reuse infrastructure already connected to this account:
 
 Rationale and alternatives are in [01-architecture.md](01-architecture.md) and
 [06-repo-structure.md](06-repo-structure.md).
+
+## 7. Infrastructure separation (decision)
+
+**This is a new business and a standalone product. Its infrastructure is isolated from
+every existing project — no shared org, no shared database, no shared keys.**
+
+| Concern | Decision |
+|---------|----------|
+| Supabase | A **dedicated organization**, created fresh for this business, holding a single project (`automation-opportunity-engine`). Not placed in any pre-existing org. |
+| Database | Its own Postgres instance. No cross-project access, no shared schemas. |
+| Secrets | Its own API keys per provider (Google Places, Anthropic, etc.) — never reused from another project, so a key can be rotated or revoked without collateral damage. |
+| Billing | The new org is its own billing entity, so this venture's cost is measurable on its own and can be expensed/transferred independently. |
+| Repo | A **dedicated GitHub repo** is recommended over this personal profile repo (see [06](06-repo-structure.md)). |
+| Vercel / Render | Deploy under a dedicated project/service; move to a separate team account if the business takes on collaborators or needs its own billing there too. |
+
+**Why it matters beyond tidiness:** separate orgs give independent access control (you can
+add a contractor to this business without exposing anything else), an independent blast
+radius (a leaked key or a bad migration cannot touch other work), clean per-business cost
+attribution, and a clean hand-off boundary if the business is ever sold, spun out, or
+brought under a company entity. Retrofitting this separation later means migrating a live
+database — cheap to do now, expensive to do later.
+
+**Operational note:** creating a Supabase *organization* is a dashboard-only action (the
+Management API exposes projects, not orgs). Once the org exists, project creation, schema
+migrations, and everything downstream can be automated. Note also that Supabase caps how
+many free-plan projects an account can run at once, so the new org may need a paid plan —
+confirm at creation time; see [08-costs.md](08-costs.md).

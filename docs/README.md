@@ -27,7 +27,7 @@ and timestamp; nothing is fabricated.
 
 ## TL;DR
 
-- **Stack (reusing connected infra):** Supabase Postgres (org *Project Q*) + `pgvector` ·
+- **Stack:** Supabase Postgres in a **dedicated new org** + `pgvector` ·
   Next.js dashboard on Vercel · long-running crawl/LLM workers on Render · `pg-boss` queue
   on Postgres for MVP · Claude Haiku (extraction) + Sonnet (design/outreach).
 - **MVP:** full pipeline for **one vertical — home-service / contractors** in one metro,
