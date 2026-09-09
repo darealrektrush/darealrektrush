@@ -22,7 +22,7 @@ Before moving into software, I spent roughly ten years running a contracting bus
 
 ## Selected systems
 
-### Oracle — AI intelligence and community operations
+### [Oracle](https://github.com/darealrektrush/oracle-product-case-study) — AI intelligence and community operations
 
 A multi-service Telegram intelligence and operations platform for the CrabStar ecosystem.
 
@@ -35,7 +35,7 @@ A multi-service Telegram intelligence and operations platform for the CrabStar e
 
 **Engineering focus:** production automation, identity, API integration, data integrity, observability, cost controls, and fail-closed operational design.
 
-> Oracle's production source remains private. Architecture and product case-study material are being prepared for public review without exposing credentials, security controls, or proprietary implementation details.
+> **[View the public Oracle product case study](https://github.com/darealrektrush/oracle-product-case-study)** — architecture, workflows, engineering decisions, verification discipline, and product ownership. Production source remains private.
 
 ### [Project Q](https://github.com/darealrektrush/Project-Q-) — participation and distribution infrastructure
 
