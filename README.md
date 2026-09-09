@@ -6,7 +6,7 @@
 
 Building AI-native products, automation systems, and full-stack infrastructure from problem definition through production operations.
 
-[Portfolio](https://crabstarcoinsol.online) · [X / Trench Intel](https://x.com/darealrektrush) · [Project Q](https://github.com/darealrektrush/Project-Q-)
+[Oracle](https://github.com/darealrektrush/oracle-product-case-study) · [Project Q](https://github.com/darealrektrush/Project-Q-) · [Portfolio](https://crabstarcoinsol.online) · [X / Trench Intel](https://x.com/darealrektrush)
 
 </div>
 
