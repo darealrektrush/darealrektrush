@@ -1,0 +1,7 @@
+# One Solana wallet address per line. Blank lines and # comments are ignored.
+# Paste the 15-20 candidates you pulled off a leaderboard, then run:
+#     python screener.py --file wallets.example.txt --json report.json
+#
+# (These are placeholders — replace with real candidate addresses.)
+# 5xoT...................................................replace
+# 9aBc...................................................replace
