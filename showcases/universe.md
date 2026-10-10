@@ -40,7 +40,9 @@ The native mobile direction includes iOS and Android clients. This is architectu
 
 ## Current stage
 
-Active application development and integration. The repository includes the ecosystem overview and approved home/native architecture specifications. Shared identity, intelligence and campaign journeys require implementation and end-to-end verification.
+Active application development and integration. The default branch contains separate Next.js web, Express/TypeScript API and React Native/Expo mobile packages, alongside home/native architecture specifications and mobile preview/visual-QA workflows.
+
+Package presence and workflow definitions demonstrate build scope. Shared identity, intelligence and campaign journeys still require end-to-end verification.
 
 This page does not certify deployment, store release or feature completeness.
 

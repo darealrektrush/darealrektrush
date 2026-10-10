@@ -25,7 +25,9 @@ Shadow separates those questions so one impressive score cannot hide missing evi
 | Relationships | Research wallet connections without treating correlation as proven ownership |
 | Research lifecycle | Preserve analysis provenance and auditable qualification decisions |
 
-The repository contains API/worker infrastructure, database migrations, automated tests and staged research/execution specifications. Specifications alone do not establish completed implementation.
+The repository contains API/worker infrastructure, database migrations and automated tests. Source review also confirms deterministic paper-execution primitives and restricted-canary signer-attempt validation, alongside broader evaluation, authorization and outcome-record modules.
+
+These are implementation components, not proof of a deployed trading service. Paper simulation does not execute live orders; signer-attempt validation evaluates supplied evidence rather than demonstrating actual transaction signing.
 
 ## Engineering decisions
 
@@ -38,7 +40,7 @@ The repository contains API/worker infrastructure, database migrations, automate
 
 ## Current stage and direction
 
-The documented foundation includes wallet intelligence, copyability research and token forensics. The staged roadmap extends into paper evaluation and restricted execution.
+The foundation includes wallet intelligence, copyability research and token forensics. Source-level development extends into paper evaluation and staged execution contracts; integration and operational verification remain separate.
 
 The root documentation is not a current live-service audit. This showcase makes no claim of live autonomous trading, tested investment performance or completed production execution.
 
