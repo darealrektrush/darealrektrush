@@ -1,0 +1,49 @@
+# CrabStar Universe
+
+### One ecosystem across web and native mobile
+
+[Back to the ecosystem](../README.md)
+
+Universe is the unified application layer being built for CrabStar. It connects Universal Profiles, Oracle intelligence and community services, Project Q campaigns and rewards, and broader ecosystem experiences.
+
+## The problem
+
+Connected infrastructure is difficult to use when people must repeatedly switch tools, reconnect accounts and piece together their history.
+
+Universe is intended to give those shared services one coherent experience while preserving their independent responsibilities.
+
+## Product direction
+
+| Experience | Role |
+| --- | --- |
+| Universal Profile | Present persistent identity, connection state and reputation |
+| Oracle | Make intelligence and assistance available across the application |
+| Campaigns and rewards | Present Q participation, progress and economic receipts |
+| Ecosystem discovery | Connect contribution, community and other product experiences |
+| Multiple clients | Share identity and service contracts across web and mobile |
+
+Oracle remains the authority for identity and reputation. Q remains the campaign/economic authority. Universe presents their state rather than creating a competing source of truth.
+
+## Architecture direction
+
+The approved client architecture uses Next.js for web/desktop and React Native with Expo for native mobile. Clients are intended to share API contracts, validation, identity types and design foundations while using platform-appropriate interfaces.
+
+The native mobile direction includes iOS and Android clients. This is architectural intent, not a claim of App Store or Google Play availability.
+
+## Engineering priorities
+
+- Preserve account and contribution continuity across clients.
+- Reuse backend services rather than duplicate business logic per interface.
+- Keep privileged credentials out of client applications.
+- Present partial connections, unavailable services and recovery steps clearly.
+- Give desktop and native mobile their own appropriate interaction design.
+
+## Current stage
+
+Active application development and integration. The repository includes the ecosystem overview and approved home/native architecture specifications. Shared identity, intelligence and campaign journeys require implementation and end-to-end verification.
+
+This page does not certify deployment, store release or feature completeness.
+
+## Publication boundary
+
+Public material communicates experience, architecture and direction. Private service configuration, detailed identity recovery procedures and internal release blockers remain outside this showcase.
