@@ -23,6 +23,9 @@ My work spans product definition, architecture, interface design, AI-assisted im
 | **Shadow** | Solana intelligence, quantitative research and staged agentic DeFi infrastructure | [Engineering showcase](showcases/shadow.md) |
 | **Universe** | Unified web and native mobile experience for the ecosystem | [Product and architecture](showcases/universe.md) |
 | **Bagwork** | Contribution and impact platform connected through shared services | Oracle/Q integration work; platform built with external collaboration |
+| **Interface Lab** | Oracle intelligence terminal interface prototype | [Design and engineering](showcases/interface-lab.md) |
+| **REKTRUSH AI OS** | Private operator workspace for intelligence and governed agent workflows | [Engineering showcase](showcases/rektrush-os.md) |
+| **Revenue Operations** | Sustainable operating models for Oracle infrastructure | [Public overview](showcases/sustainable-operations.md) |
 | **FAWKQ** | Testing and activation asset for campaign and economic experiments | A proving environment for the broader build |
 
 ## How the systems fit together
