@@ -2,9 +2,11 @@
 
 <div align="center">
 
-### Co-Founder of CrabStar · Technical Product Builder
+### Tech Founder · Co-Founder of CrabStar · Full-Stack Systems Engineer
 
-**Building identity, intelligence, programmable economics and agentic DeFi infrastructure on Solana.**
+**AI Agents · Solana · Blockchain Infrastructure**
+
+Building identity, intelligence, programmable economics and agentic DeFi systems across connected applications.
 
 [Oracle case study](https://github.com/darealrektrush/oracle-product-case-study) · [Project Q](showcases/project-q.md) · [Shadow](showcases/shadow.md) · [Universe](showcases/universe.md) · [X / Trench Intel](https://x.com/darealrektrush)
 
