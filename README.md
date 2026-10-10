@@ -10,6 +10,12 @@
 
 </div>
 
+## Start here
+
+- **See the product:** [Oracle case study](https://github.com/darealrektrush/oracle-product-case-study) — interface examples, architecture and engineering decisions.
+- **Explore the next frontier:** [Shadow](showcases/shadow.md) — Solana intelligence, quantitative research and staged agentic infrastructure.
+- **Inspect working code:** [Event Reconciliation Lab](examples/event-reconciliation/README.md) — an offline example with synthetic data and executable tests.
+
 ## What I'm building
 
 CrabStar is a connected ecosystem where identity, contribution, intelligence and economic participation can work together. Its mission includes long-term impact, beginning with ocean conservation.
