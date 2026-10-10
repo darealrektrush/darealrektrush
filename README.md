@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### Co-Founder of CrabStar · Technical Product Builder
+### Tech Founder · Co-Founder of CrabStar · Full-Stack Systems Engineer
 
 **Building identity, intelligence, programmable economics and agentic DeFi infrastructure on Solana.**
 
