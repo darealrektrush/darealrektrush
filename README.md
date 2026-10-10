@@ -54,6 +54,12 @@ This is a product relationship map, not a live deployment diagram. Dashed relati
 
 **Universe — one ecosystem across clients.** The application direction combines a Next.js web experience with React Native/Expo mobile clients using shared Oracle and Q contracts.
 
+## Runnable engineering example
+
+[**Event Reconciliation Lab**](examples/event-reconciliation/README.md) — an offline Python example demonstrating duplicate handling, conflicting-event rejection and order-independent reconciliation. Includes synthetic fixtures and seven executable tests; no credentials or dependencies required.
+
+This standalone educational example illustrates an engineering concern without exposing production implementation.
+
 ## Engineering priorities
 
 | Concern | How it shapes the work |
