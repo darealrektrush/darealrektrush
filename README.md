@@ -6,6 +6,8 @@
 
 **AI Agents · Solana · Blockchain Infrastructure**
 
+[![Portfolio checks](https://github.com/darealrektrush/darealrektrush/actions/workflows/portfolio-checks.yml/badge.svg)](https://github.com/darealrektrush/darealrektrush/actions/workflows/portfolio-checks.yml)
+
 Building identity, intelligence, programmable economics and agentic DeFi systems across connected applications.
 
 [Oracle case study](https://github.com/darealrektrush/oracle-product-case-study) · [Project Q](showcases/project-q.md) · [Shadow](showcases/shadow.md) · [Universe](showcases/universe.md) · [X / Trench Intel](https://x.com/darealrektrush)
@@ -17,6 +19,7 @@ Building identity, intelligence, programmable economics and agentic DeFi systems
 - **See the product:** [Oracle case study](https://github.com/darealrektrush/oracle-product-case-study) — interface examples, architecture and engineering decisions.
 - **Explore the next frontier:** [Shadow](showcases/shadow.md) — Solana intelligence, quantitative research and staged agentic infrastructure.
 - **Inspect working code:** [Event Reconciliation Lab](examples/event-reconciliation/README.md) — an offline example with synthetic data and executable tests.
+- **Follow the engineering:** [Evidence and design decisions](ENGINEERING.md) — failure scenarios, project stages and what the public examples establish.
 
 ## What I'm building
 

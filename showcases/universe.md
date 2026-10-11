@@ -12,6 +12,34 @@ Connected infrastructure is difficult to use when people must repeatedly switch 
 
 Universe is intended to give those shared services one coherent experience while preserving their independent responsibilities.
 
+## A practical engineering scenario
+
+A member enters on mobile, returns on web, and has only some account connections verified. The application should preserve their canonical profile and show which experience is available next, without inventing eligibility or reward state.
+
+The design challenge spans authentication continuity, platform-specific navigation and honest projections of services that may be incomplete or unavailable.
+
+## Client and authority boundaries
+
+```mermaid
+flowchart TD
+    W["Next.js web client"] --> A["Application API"]
+    M["React Native and Expo client"] --> A
+    A --> O["Oracle identity and intelligence"]
+    A --> Q["Q campaign and economic state"]
+    O --> P["Profile and connection projections"]
+    Q --> C["Campaign and receipt projections"]
+```
+
+This illustrates intended authority boundaries. It does not certify that every client-to-service path is integrated or deployed.
+
+## Decisions and tradeoffs
+
+| Decision | Why it matters | Cost to manage |
+| --- | --- | --- |
+| Share service contracts, retain distinct clients | Identity can remain consistent across devices | Web and native require separate validation |
+| Present Oracle and Q state | The app avoids duplicating permanent identity and campaign authority | Service outages need clear interface states |
+| Use platform-appropriate navigation | Mobile and desktop can fit their own interaction patterns | Design parity needs visual and behavioral review |
+
 ## Product direction
 
 | Experience | Role |
@@ -43,6 +71,8 @@ The native mobile direction includes iOS and Android clients. This is architectu
 Active application development and integration. The default branch contains separate Next.js web, Express/TypeScript API and React Native/Expo mobile packages, alongside home/native architecture specifications and mobile preview/visual-QA workflows.
 
 Package presence and workflow definitions demonstrate build scope. Shared identity, intelligence and campaign journeys still require end-to-end verification.
+
+Representative manifest review confirms Next.js/React for web and React Native/Expo for mobile. A shared-package extraction remains architecture direction rather than a completed monorepo claim.
 
 This page does not certify deployment, store release or feature completeness.
 

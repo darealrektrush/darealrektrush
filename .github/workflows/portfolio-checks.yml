@@ -1,0 +1,34 @@
+name: Portfolio checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  public-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out portfolio
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Run synthetic reconciliation tests
+        run: python -m unittest discover -s examples/event-reconciliation -p 'test_*.py' -v
+      - name: Run order-independent demo
+        run: python examples/event-reconciliation/reconcile.py
+      - name: Check portfolio navigation and SVG assets
+        run: python scripts/check_portfolio.py
