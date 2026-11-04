@@ -10,19 +10,16 @@ I build connected systems for identity, campaign economics and Solana intelligen
 
 </div>
 
-## CrabStar: organization and development
-
-I am CrabStar's co-founder and the founding developer of **Oracle** and **Project Q**, leading their architecture, AI-assisted implementation, verification and operations.
-
-**Shadow** and **Universe** are CrabStar projects developed collaboratively by the team.
-
-The private project repositories now live in [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem). The organization groups the shared CrabStar projects; individual engineering contributions remain attributed to their authors. Public case studies and runnable examples remain on this profile.
-
 ## Selected work
 
-- **[Oracle](https://github.com/darealrektrush/oracle-product-case-study) + [Project Q](showcases/project-q.md):** persistent identity, intelligence and reusable campaign economics.
-- **[Shadow](showcases/shadow.md):** Solana wallet research, token-risk evidence and staged agentic DeFi infrastructure.
-- **[Universe](showcases/universe.md):** a unified web and native mobile experience for CrabStar.
+| Project | Development | Focus |
+| --- | --- | --- |
+| **[Oracle](https://github.com/darealrektrush/oracle-product-case-study)** | Founding developer | Persistent identity, intelligence and community operations |
+| **[Project Q](showcases/project-q.md)** | Founding developer | Campaign infrastructure and programmable economics |
+| **[Shadow](showcases/shadow.md)** | Collaborative CrabStar development | Solana intelligence and staged agentic DeFi |
+| **[Universe](showcases/universe.md)** | Collaborative CrabStar development | Connected web and native mobile experiences |
+
+**[CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem)** · Shared projects, individual contributions.
 
 [**Inspect working code**](examples/event-reconciliation/README.md) · [Engineering evidence](ENGINEERING.md) · [X / Trench Intel](https://x.com/darealrektrush)
 
