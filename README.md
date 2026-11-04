@@ -10,11 +10,13 @@ I build connected systems for identity, campaign economics and Solana intelligen
 
 </div>
 
-## CrabStar: organization and builder
+## CrabStar: organization and development
 
-I am CrabStar's co-founder and the creator/developer of Oracle, Project Q, Shadow and Universe. I lead their product direction and engineering work, including architecture, AI-assisted implementation, verification and operations.
+I am CrabStar's co-founder and the founding developer of **Oracle** and **Project Q**, leading their architecture, AI-assisted implementation, verification and operations.
 
-The private project repositories now live in [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem). The organization groups the shared CrabStar projects; my engineering work and commit authorship remain associated with **darealrektrush**. Public case studies and runnable examples remain on this profile.
+**Shadow** and **Universe** are CrabStar projects developed collaboratively by the team.
+
+The private project repositories now live in [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem). The organization groups the shared CrabStar projects; individual engineering contributions remain attributed to their authors. Public case studies and runnable examples remain on this profile.
 
 ## Selected work
 
