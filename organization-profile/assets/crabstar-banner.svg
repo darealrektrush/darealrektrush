@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="420" viewBox="0 0 1440 420" role="img" aria-labelledby="title desc">
+<title id="title">CrabStar — The Tide Rises Together</title>
+<desc id="desc">A connected ecosystem for identity, intelligence and participation. Oracle, Project Q, Shadow and Universe.</desc>
+<defs><linearGradient id="sea" x2="1" y2=".6"><stop stop-color="#08121f"/><stop offset="1" stop-color="#12384c"/></linearGradient><radialGradient id="light"><stop stop-color="#46a4bb" stop-opacity=".2"/><stop offset="1" stop-color="#46a4bb" stop-opacity="0"/></radialGradient></defs>
+<rect width="1440" height="420" rx="20" fill="url(#sea)"/>
+<circle cx="1220" cy="165" r="330" fill="url(#light)"/>
+<g fill="none" stroke="#89c6cf" stroke-opacity=".13"><path d="M880 70c170 0 170 160 340 160h220M850 112c185 0 185 160 370 160h220M820 154c200 0 200 160 400 160h220M790 196c215 0 215 160 430 160h220"/><circle cx="1220" cy="165" r="108"/><circle cx="1220" cy="165" r="164"/><circle cx="1220" cy="165" r="220"/></g>
+<path d="M64 62h52" stroke="#d3b46b" stroke-width="3"/>
+<g font-family="Arial,Helvetica,sans-serif"><text x="64" y="110" fill="#d3b46b" font-size="17" letter-spacing="5">A CONNECTED ECOSYSTEM</text>
+<text x="60" y="203" fill="#f3f0e8" font-size="78" font-weight="700" letter-spacing="2">CRABSTAR</text>
+<text x="64" y="253" fill="#cad7df" font-size="25">Identity. Intelligence. Participation.</text>
+<path d="M64 291h740" stroke="#d3b46b" stroke-opacity=".35"/>
+<text x="64" y="333" fill="#8fc5d5" font-size="16" letter-spacing="3">ORACLE · PROJECT Q · SHADOW · UNIVERSE</text>
+<text x="64" y="378" fill="#d3b46b" font-size="17" letter-spacing="2">THE TIDE RISES TOGETHER</text></g></svg>
