@@ -111,4 +111,4 @@ My background in carpentry, contracting and commercial fishing shapes how I buil
 
 The public material here shows product thinking and selected engineering evidence. Sensitive implementation, operating configuration and private user data remain outside the showcases.
 
-**Built below. Forged in the trenches.**
+**Forged Below. Building Beyond.**
