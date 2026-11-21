@@ -1,105 +1,92 @@
-# Project Q — Campaign Economics and On-Chain DeFi
-
-> **Public product and engineering case study.** The implementation repository is private. This document describes reviewed design and engineering scope without disclosing privileged operations or claiming an unverified production release.
+# Project Q
+### Verified participation · Campaign economics · On-chain / DeFi infrastructure
 
 **Founding developer:** [Thomas Phillips](https://github.com/darealrektrush)
 
-[Personal engineering profile](../README.md) · [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem) · [Original engineering showcase](../showcases/project-q.md)
+[← Engineering portfolio](../README.md) · [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem) · [Original engineering showcase](../showcases/project-q.md)
+
+> **Public engineering case study.** Q is an active build. A capability implemented in source or tested in isolation is not automatically deployed, enabled, funded or verified end-to-end. Strategic airdrops remain deferred.
 
 ## Executive summary
 
-Project Q is CrabStar's reusable economic engine. It turns identity-backed, verified participation into campaign-specific eligibility, deterministic scoring, allocations and traceable economic outcomes. Its on-chain/DeFi direction includes wallet and token-aware rules, SPL/Token-2022/USDC workflows, distributions, burns, settlement verification and receipts. Strategic airdrops remain deferred.
+Project Q is the reusable participation and economic coordination engine for CrabStar. It is designed to let campaigns define what qualifies, what members earn, which asset or economic mechanic applies, and what evidence proves an outcome—all without recreating identity or embedding payout authority in social interactions.
 
-## Problem and engineering approach
+It spans Telegram-based campaigns, verified participation, eligibility, scoring, on-chain/DeFi rules, allocation and settlement records, and integration with ecosystem applications such as Universe and Bagwork.
 
-**Key engineering challenge:** Keep campaign calculations, financial approval, execution and settlement evidence separate. An allocation is not a completed transfer; a successful test is not proof of production activation.
+## The problem
 
-## Architecture, tradeoffs and representative scenario
+Community campaigns often start as messages, spreadsheets and manual transfers. Once a program crosses multiple products, wallets and assets, that approach becomes difficult to audit. Duplicate actions, missing identity evidence, partial settlement and inaccurate reward displays become real operational risks.
 
-### The problem
+**The engineering goal:** turn social participation and on-chain facts into reproducible campaign decisions, then make the distinction between *earned*, *allocated*, *authorized*, *submitted* and *confirmed* understandable to participants and operators.
 
-Community campaigns often scatter eligibility, missions, scoring and payouts across messages, spreadsheets and one-off scripts. Participants struggle to see their next step; operators struggle to reconcile what happened.
+## System responsibilities
 
-Q brings those responsibilities into a campaign system that can be reused across assets and interfaces.
-
-### A practical engineering scenario
-
-A contribution arrives twice. Its campaign result is recorded, but payment confirmation has not arrived. The interface must preserve the participant's progress without displaying a completed payout.
-
-That scenario drives three design choices: distinguish duplicate input from new participation, keep calculation separate from execution, and make recorded outcomes distinguishable from confirmed settlement.
-
-### Responsibility map
+| Layer | Owner | Responsibility |
+| --- | --- | --- |
+| Permanent identity, linked accounts and wallets | **Oracle** | Verified identity facts and lifetime Crab Army progression |
+| Campaign definitions, eligibility and scoring | **Project Q** | Campaign-specific rules, evidence and decisions |
+| Economic mechanics | **Project Q** | Allocation, release, distributions, burns and settlement coordination |
+| Financial authorization and chain evidence | **Restricted execution boundary** | Explicit approvals, transactions, finality and reconciliation |
+| Member experiences | **Telegram / Universe / connected apps** | Progress, outcomes, actionable status and receipts |
 
 ```mermaid
-flowchart TD
-    T["Telegram campaign client"] --> Q["Q campaign services"]
-    U["Future Universe client"] -. "shared service integration" .-> Q
-    O["Oracle identity facts"] --> Q
-    B["Contribution evidence"] --> Q
-    Q --> R["Campaign decisions and records"]
-    E["Separately authorized execution"] --> S["Settlement evidence"]
-    R --> V["Receipt and reconciliation views"]
-    S --> V
+flowchart LR
+  A["Member / app action"] --> E["Evidence intake & replay protection"]
+  O["Oracle verified identity & wallet facts"] --> G["Eligibility & campaign rules"]
+  E --> G
+  G --> S["Scoring & allocation record"]
+  S --> R["Review / authorization boundary"]
+  R -. "approved transaction only" .-> C["Solana execution & finality evidence"]
+  S --> V["Participant progress / pending state"]
+  C --> L["Reconciliation & settlement receipt"]
+  L --> V
 ```
 
-This is a responsibility map, not an execution protocol or live deployment diagram. A campaign decision does not grant execution authority.
+*Conceptual authority diagram—not a claim that every path is live.*
 
-### Decisions and tradeoffs
+## On-chain and DeFi mechanics
 
-| Decision | Why it matters | Cost to manage |
+The product scope is broader than simple social rewards:
+
+- **Token-aware eligibility:** applicable wallet ownership and holdings evidence, including Solana token-program identity, with campaign-specific requirements.
+- **Multiple asset paths:** staged SPL / Token-2022 / USDC economic workflows, subject to the exact implementation and release state.
+- **Distributions:** reproducible allocation decisions, controlled approval/execution boundaries, confirmation and discrepancy handling.
+- **Burn and release logic:** explicit economic rules and records that distinguish a planned action from an executed on-chain result.
+- **Holding checkpoints and corrections:** point-in-time eligibility/holding evidence and attributable corrections rather than silent history rewrites.
+- **Receipts:** records linking campaign decisions to verifiable settlement evidence where applicable.
+
+**Not yet claimed:** complete live on-chain automation across every asset, universal settlement availability, or strategic airdrops.
+
+## Representative engineering scenario
+
+A member submits the same qualifying action twice. Their campaign allocation is calculated, but no confirmed on-chain payment has been observed.
+
+The correct user experience is **one eligible event**, **one attributable allocation**, and a **pending/unsettled** financial state—not two rewards or a fictional transaction receipt. Retry and reconciliation paths must converge without double credit.
+
+## Design tradeoffs
+
+| Decision | Benefit | Complexity introduced |
 | --- | --- | --- |
-| Oracle owns identity; Q consumes verified facts | Campaigns can reuse one persistent profile | Cross-service integration needs explicit verification |
-| Campaign records and settlement remain distinct | A proposed reward cannot masquerade as a paid reward | More states to explain in the participant interface |
-| Reconcile outcomes against evidence | Repeated delivery and partial outcomes stay reviewable | Recovery and disagreement paths need dedicated handling |
+| Keep Oracle as canonical identity authority | Reusable participation across products | Cross-service claim and ownership validation |
+| Separate campaign scoring from transfers | Financial safety and auditability | Multiple explicit lifecycle states |
+| Store attributable economic evidence | Reconciliation and dispute handling | More durable records and correction workflows |
+| Require verifiable chain settlement | Honest outcome reporting | Provider errors, finality and replay management |
+| Keep token mechanisms campaign-scoped | Reusable multi-asset infrastructure | Config validation and security review |
 
-### Scope
+## Engineering substance
 
-| Area | Product responsibility |
-| --- | --- |
-| Operations | Campaign definitions, participant journeys and mission progression |
-| Eligibility and scoring | Campaign-specific decisions using verified identity facts |
-| Economics | Allocation, release and settlement policy |
-| Contribution | Reviewable evidence from connected contribution platforms |
-| Receipts | Attributable economic outcomes and participant history |
+The private implementation spans Node.js / Express, Telegram campaign experiences, PostgreSQL / Supabase migrations, Solana integrations and automated checks. Recent development areas include identity integration, referral and participation evidence, holding projections, transaction boundary isolation, and on-chain economic foundations.
 
-Oracle owns permanent identity, account/wallet verification and lifetime reputation. Q owns campaign-specific decisions. Universe consumes those services; Bagwork integration connects contribution to the campaign experience.
+Source-level code and individual CI checks establish **engineering progress**. Genuine Dev acceptance, migrations, operator approvals, external wallet behavior and settlement verification require separately recorded evidence.
 
-### Engineering substance
+## My role
 
-The implementation repository contains a Node.js/Express service, Telegram campaign application, campaign logic, economic modules, database migrations and automated tests.
+As **founding developer**, I work across product definition, campaign/economic architecture, service boundaries, implementation, security controls, integration review and release verification. The focus is to make economic participation useful, understandable and independently auditable.
 
-Engineering work includes separating campaign calculation from financial execution, preserving attributable results, handling repeated delivery and representing partial outcomes explicitly. Generic operation, contribution and receipt integrations remain active development.
+## Current stage and publication boundary
 
-A calculation result is not transaction authorization. A recorded allocation is not proof of a finalized payment. The product experience must explain those distinctions clearly.
+**Status: active development and integration.** FAWKQ has served as a proving environment for campaign mechanics. Future campaigns and economic operations require their own authorization and live verification.
 
-Representative private-source tests cover identity authority, deterministic allocation inventory, duplicate-credit rejection and the distinction between allocation, release and settlement receipts. This is source review of selected tests, not a report that the complete campaign journey has passed hosted verification.
+This public document intentionally excludes privileged payout procedures, campaign budgets, private account data, production configuration and unreleased operational details.
 
-For an inspectable public illustration of repeated and out-of-order observations, see the [Event Reconciliation Lab](../examples/event-reconciliation/README.md). It uses synthetic records and does not reproduce Q's production rules.
-
-### Current stage
-
-Active development and integration. FAWKQ is the current proving asset and Bond the Duck is a reference campaign. Code, open PRs, deployment and campaign activation are separate states; this showcase does not certify a live reward program.
-
-The first campaign surface is the Project Q Telegram Mini App. Universe is intended to reuse the same engine and canonical identity.
-
-### Direction
-
-Build reusable participation and economic coordination across campaigns, contribution programs and ecosystem products. Broader airdrop, burn and settlement mechanics require their own validation and release review.
-
-
-
-## Development ownership
-
-**Founding developer:** [Thomas Phillips](https://github.com/darealrektrush)
-
-This work combines product and architecture decisions, iterative implementation, integration review, verification and operational tradeoffs. Collaborative credit identifies shared development without equating authorship of distinct systems.
-
-## Current evidence boundary
-
-Active integration and Dev acceptance work; financial settlement and on-chain mechanics must be described by specific verified environments, not assumed generally available.
-
-The private implementation repository is [Project-Q-](https://github.com/CrabStar-Ecosystem/Project-Q-). Code, working prototypes, test results, deployed services, actual settlements and released product availability are distinct kinds of evidence.
-
-## Publication boundary
-
-This page intentionally excludes secrets, sensitive system details, private participant records, strategy parameters and transaction authorization configuration.
+**Participation with purpose. Outcomes with evidence.**
