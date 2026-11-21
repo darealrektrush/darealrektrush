@@ -25,7 +25,7 @@ I co-founded **CrabStar** and lead technical development across interconnected i
 | **Oracle** | **Founding developer & technical lead** | [Identity & intelligence](https://github.com/darealrektrush/oracle-product-case-study) |
 | **Project Q** | **Founding developer & technical lead** | [Campaign economics & DeFi](case-studies/project-q.md) |
 | **SHADOW** | **Founding developer & technical lead**; collaborative development with [Andrew](https://github.com/Andrew-07) | [Solana intelligence](case-studies/shadow.md) |
-| **Universe** | **Lead developer**; collaborative development with [Andrew](https://github.com/Andrew-07) | [Web & native applications](case-studies/universe.md) |
+| **Universe** | **Co-founding developer & technical lead**; collaborative development with [Andrew](https://github.com/Andrew-07) | [Web & native applications](case-studies/universe.md) |
 
 ## What I'm building
 
