@@ -30,5 +30,9 @@ jobs:
         run: python -m unittest discover -s examples/event-reconciliation -p 'test_*.py' -v
       - name: Run order-independent demo
         run: python examples/event-reconciliation/reconcile.py
+      - name: Run synthetic identity reconciliation tests
+        run: python -m unittest discover -s examples/identity-reconciliation -p 'test_*.py' -v
+      - name: Run identity reconciliation demo
+        run: python examples/identity-reconciliation/reconcile.py
       - name: Check portfolio navigation and SVG assets
         run: python scripts/check_portfolio.py
