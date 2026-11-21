@@ -40,9 +40,19 @@ My work spans **full-stack development, modular and distributed service architec
 | **SHADOW** | Solana wallet intelligence, quantitative research, token forensics, copyability analysis, AI-assisted agents and staged, policy-governed DeFi execution infrastructure | [Case study](case-studies/shadow.md) |
 | **Universe** | Unified web/native mobile experiences integrating identity, intelligence, reputation, campaigns and economic infrastructure | [Case study](case-studies/universe.md) |
 
-**Adjacent ecosystem work:** **Bagwork** connects contribution and impact through Oracle/Q integration work developed with external collaboration; **FAWKQ** is a proving environment for campaign and economic experiments. Other areas include [Interface Lab](showcases/interface-lab.md), [REKTRUSH AI OS](showcases/rektrush-os.md), and [Revenue Operations](showcases/sustainable-operations.md).
+**Adjacent ecosystem work:** **Bagwork** connects contribution and impact through Oracle/Q integration work developed with external collaboration. Other areas include [Interface Lab](showcases/interface-lab.md), [REKTRUSH AI OS](showcases/rektrush-os.md), and [Revenue Operations](showcases/sustainable-operations.md).
 
 **Development-stage note:** These descriptions cover implemented foundations and active product direction. They do not claim that every integration, on-chain financial operation or execution capability is live.
+
+## FAWKQ — community utility & economic experimentation
+
+**[FAWKQ ($FAWKQ)](https://fawkq.com/)** is a Solana ecosystem token originally centered on **Bagwork**, community participation and contribution-driven economic mechanics. Its growing relationship with **Oracle × Project Q** connects verified identity and wallet facts with campaign eligibility, programmable economic coordination, and traceable on-chain rewards.
+
+FAWKQ is an early proving environment for CrabStar's wider participation and DeFi infrastructure. Individual integrations and financial workflows remain subject to their own implementation and verification stages.
+
+**Network:** Solana Mainnet  
+**Token mint address:** `GKnhgBgyYs8zPvteBoMXjt1Ew962tQYVU8gQztFdpump`  
+**Verify:** [Solscan](https://solscan.io/token/GKnhgBgyYs8zPvteBoMXjt1Ew962tQYVU8gQztFdpump) · [Official FAWKQ site](https://fawkq.com/)
 
 ## Ecosystem architecture
 
