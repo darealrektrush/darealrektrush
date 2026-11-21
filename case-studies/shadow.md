@@ -1,7 +1,7 @@
 # SHADOW
 ### Solana intelligence · Wallet research · Evidence-led agentic DeFi
 
-**Lead developer:** [Thomas Phillips](https://github.com/darealrektrush)  
+**Founding developer & technical lead:** [Thomas Phillips](https://github.com/darealrektrush)  
 **Collaborative developers:** [Thomas Phillips](https://github.com/darealrektrush) & [Andrew](https://github.com/Andrew-07)
 
 [← Engineering portfolio](../README.md) · [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem) · [Original engineering showcase](../showcases/shadow.md)
@@ -71,7 +71,7 @@ The private codebase contains Python APIs and workers, PostgreSQL-backed researc
 
 ## My development role
 
-I lead the technical direction, core architecture, research and intelligence systems, implementation and verification strategy. SHADOW is also a **collaborative development project with Andrew**, whose contributions are credited alongside mine.
+As SHADOW's founding developer and technical lead, I drive the technical direction, core architecture, research and intelligence systems, implementation and verification strategy. SHADOW is a **collaborative build with Andrew**, with both developers credited for their contributions.
 
 ## Current stage
 
