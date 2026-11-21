@@ -73,6 +73,71 @@ The correct user experience is **one eligible event**, **one attributable alloca
 | Require verifiable chain settlement | Honest outcome reporting | Provider errors, finality and replay management |
 | Keep token mechanisms campaign-scoped | Reusable multi-asset infrastructure | Config validation and security review |
 
+## Engineering implementation and integration boundaries
+
+Project Q is designed as a **reusable campaign engine**, not a separate identity service or a set of one-off payment scripts. The private codebase contains a Node.js/Express service, a Telegram campaign application, database migrations, economic modules and automated tests. The engineering work separates the following concerns:
+
+| Boundary | Input | Responsibility | Output |
+| --- | --- | --- | --- |
+| **Participation intake** | Social actions, campaign events and contribution evidence | Attribute events, apply review/replay rules and preserve evidence | Campaign-scoped observations |
+| **Identity and eligibility** | Oracle-verified profile, connections and wallet claims | Evaluate campaign requirements without creating a second identity authority | Eligibility decision with attributable inputs |
+| **Campaign accounting** | Qualified events, rule versions and asset-specific terms | Determine scoring, allocation and release state | Reproducible campaign records |
+| **Financial control** | Proposed distribution or burn | Require distinct review and authorization before state-changing actions | Approved, rejected or pending instruction |
+| **On-chain evidence** | Transaction reference, status and finality | Distinguish submitted actions from observed settlement | Reconciled result and receipt |
+| **Ecosystem presentation** | Authorized campaign and settlement projections | Communicate progress to Telegram and future clients | Clear member/operator status |
+
+These are *logical boundaries*. They do not certify that each boundary is independently deployed or that every integrated financial path has passed acceptance.
+
+### State transitions: decision is not settlement
+
+```mermaid
+stateDiagram-v2
+    [*] --> Observed
+    Observed --> Reviewed: evidence / eligibility review
+    Reviewed --> Rejected: failed requirements
+    Reviewed --> Qualified: accepted evidence
+    Qualified --> Allocated: campaign decision
+    Allocated --> AwaitingApproval: proposed release
+    AwaitingApproval --> Authorized: explicit approval
+    AwaitingApproval --> Rejected: denied or revoked
+    Authorized --> Submitted: controlled transaction handoff
+    Submitted --> Confirmed: verified chain evidence
+    Submitted --> NeedsReconciliation: missing / conflicting evidence
+    NeedsReconciliation --> Confirmed: independently verified outcome
+    Confirmed --> Receipted: recorded reconciliation
+```
+
+*Illustrative lifecycle model. Actual state names, transitions and release permissions must be reconciled to the specific implementation; this is not an assertion that all paths are live.*
+
+### Three engineering decisions worth examining
+
+1. **Identity should be reused, not duplicated.** Oracle owns canonical member identity, verified account/wallet connections and lifetime progression. Q consumes verified facts but remains authoritative for campaign-scoped eligibility and economics.
+2. **Financial actions cannot be inferred from engagement.** A successful social action or allocation calculation does not approve a transfer. Distribution authority, chain submission, finality evidence and participant receipts must remain separately verifiable.
+3. **Corrections should be attributable.** Duplicate event delivery, referral revocation, holding changes and incomplete chain evidence require explicit review/replay behavior rather than silently rewriting participant history.
+
+## Verification and release evidence
+
+A case study is credible when readers can distinguish **design intent**, **source-level work**, **automated checks** and **genuine environment acceptance**.
+
+| What can be described | What it establishes | What it does **not** establish |
+| --- | --- | --- |
+| Private campaign code and migration history | Implemented data and service structures at reviewed revisions | The exact schema is deployed in every environment |
+| Automated unit / contract checks | Selected deterministic rules and boundary behavior | Real provider, wallet or operator acceptance |
+| Isolated economic and on-chain rehearsals | Evidence about specific scenarios under test conditions | Permission to distribute real funds |
+| Verified transaction evidence and reconciliation records | Settlement of the particular referenced operation | Complete deployment readiness of every campaign mechanism |
+| Public [Event Reconciliation Lab](../examples/event-reconciliation/README.md) | Inspectable handling of duplicate and out-of-order synthetic events | Project Q production code or on-chain finality |
+
+### Acceptance questions before calling an economic journey complete
+
+- Does the same verified member resolve to one canonical Oracle profile across Telegram and other clients?
+- Can repeated participation evidence be retried without duplicating credit or allocation?
+- Are campaign eligibility, wallet ownership and token holdings evaluated against the correct point in time?
+- Can a financial action be rejected or left pending without falsely reporting payment?
+- Can an operator trace an approved distribution from campaign decision through transaction evidence and participant receipt?
+- Are secrets, signing privileges and production funds isolated from development and rehearsal environments?
+
+These are **qualification criteria**, not a claim that every check has already passed. Specific release records and environment evidence determine the answer.
+
 ## Engineering substance
 
 The private implementation spans Node.js / Express, Telegram campaign experiences, PostgreSQL / Supabase migrations, Solana integrations and automated checks. Recent development areas include identity integration, referral and participation evidence, holding projections, transaction boundary isolation, and on-chain economic foundations.
