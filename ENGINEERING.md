@@ -13,24 +13,27 @@ The portfolio spans persistent identity, campaign economics, on-chain research a
 | AI and Solana research | [Shadow](case-studies/shadow.md) | Evidence quality, research reproducibility and staged execution boundaries |
 | Applications across devices | [Universe](case-studies/universe.md) | Web/native clients and shared-service authority |
 | Executable engineering | [Event Reconciliation Lab](examples/event-reconciliation/README.md) | Python source, synthetic events and seven tests |
+| Canonical identity claims | [Universal Profile Reconciliation Lab](examples/identity-reconciliation/README.md) | Synthetic verified claims, conflicting ownership, profile continuity and 12 tests |
 
-## Run the public example
+## Run the public examples
 
 From the repository root, with Python 3.12 or newer:
 
 ```bash
 python examples/event-reconciliation/reconcile.py
 python -m unittest discover -s examples/event-reconciliation -p 'test_*.py' -v
+python examples/identity-reconciliation/reconcile.py
+python -m unittest discover -s examples/identity-reconciliation -p 'test_*.py' -v
 python scripts/check_portfolio.py
 ```
 
 The lab demonstrates duplicate handling, conflicting-event rejection and order-independent reconciliation over a finite batch. Its tests exercise pending observations and unmatched confirmations as well as reconciled results. The demo checks all 120 permutations of its five synthetic inputs.
 
-This example has no provider calls, credentials or package dependencies. It is an educational model, not production payment logic, chain-finality verification, authentication or a concurrent exactly-once service.
+Both examples use only synthetic records and the Python standard library. Neither implements production payment logic, chain-finality verification, OAuth or wallet ownership proofs, persistent identity merges or concurrent exactly-once effects.
 
 ## What the checks establish
 
-The [portfolio workflow](https://github.com/darealrektrush/darealrektrush/actions/workflows/portfolio-checks.yml) runs the lab's tests and demo, validates relative file links in Markdown/HTML, parses the SVG assets and rejects links to the known private implementation repositories. It runs without repository secrets and has read-only contents permission.
+The [portfolio workflow](https://github.com/darealrektrush/darealrektrush/actions/workflows/portfolio-checks.yml) runs both labs' tests and demos, validates relative file links in Markdown/HTML, parses the SVG assets and rejects links to the known private implementation repositories. It runs without repository secrets and has read-only contents permission.
 
 Those checks protect the public example and navigation. They do not validate external websites, deployed CrabStar services, research performance or complete production security. Public repository visibility is reviewed separately from local file checks.
 
