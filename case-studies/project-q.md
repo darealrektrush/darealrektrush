@@ -1,7 +1,7 @@
 # Project Q
 ### Verified participation · Campaign economics · On-chain / DeFi infrastructure
 
-**Founding developer:** [Thomas Phillips](https://github.com/darealrektrush)
+**Founding developer & technical lead:** [Thomas Phillips](https://github.com/darealrektrush)
 
 [← Engineering portfolio](../README.md) · [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem) · [Original engineering showcase](../showcases/project-q.md)
 
@@ -81,7 +81,7 @@ Source-level code and individual CI checks establish **engineering progress**. G
 
 ## My role
 
-As **founding developer**, I work across product definition, campaign/economic architecture, service boundaries, implementation, security controls, integration review and release verification. The focus is to make economic participation useful, understandable and independently auditable.
+As **founding developer and technical lead**, I work across product definition, campaign/economic architecture, service boundaries, implementation, security controls, integration review and release verification. The focus is to make economic participation useful, understandable and independently auditable.
 
 ## Current stage and publication boundary
 
