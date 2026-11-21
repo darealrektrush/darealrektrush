@@ -1,8 +1,8 @@
 # SHADOW
 ### Solana intelligence · Wallet research · Evidence-led agentic DeFi
 
-**Founding developer & technical lead:** [Thomas Phillips](https://github.com/darealrektrush)  
-**Collaborative developers:** [Thomas Phillips](https://github.com/darealrektrush) & [Andrew](https://github.com/Andrew-07)
+**Founding Developer & Technical Lead:** [Thomas Phillips](https://github.com/darealrektrush)  
+**Collaborative Developers:** [Thomas Phillips](https://github.com/darealrektrush) & [Andrew](https://github.com/Andrew-07)
 
 [← Engineering portfolio](../README.md) · [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem) · [Original engineering showcase](../showcases/shadow.md)
 
