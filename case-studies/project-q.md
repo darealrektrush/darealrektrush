@@ -1,7 +1,7 @@
 # Project Q
 ### Verified participation · Campaign economics · On-chain / DeFi infrastructure
 
-**Founding developer & technical lead:** [Thomas Phillips](https://github.com/darealrektrush)
+**Founding Developer & Technical Lead:** [Thomas Phillips](https://github.com/darealrektrush)
 
 [← Engineering portfolio](../README.md) · [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem) · [Original engineering showcase](../showcases/project-q.md)
 
