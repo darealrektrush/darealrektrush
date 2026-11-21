@@ -10,7 +10,7 @@ I architect and build connected systems spanning persistent identity, AI-powered
 
 From physical construction and mechanical systems to decentralized infrastructure, I bring a builder's mindset to complex technical problems: understand the whole system, engineer for reliability, and own the result.
 
-[**CrabStar Ecosystem**](https://github.com/CrabStar-Ecosystem) · [**Engineering evidence**](ENGINEERING.md) · [**Runnable code**](examples/event-reconciliation/README.md)
+[**CrabStar Ecosystem**](https://github.com/CrabStar-Ecosystem) · [**Engineering evidence**](ENGINEERING.md) · [**Runnable examples**](ENGINEERING.md#run-the-public-examples)
 
 [![Portfolio checks](https://github.com/darealrektrush/darealrektrush/actions/workflows/portfolio-checks.yml/badge.svg)](https://github.com/darealrektrush/darealrektrush/actions/workflows/portfolio-checks.yml)
 
@@ -90,6 +90,8 @@ Building wallet and token research pipelines, accounting-aware historical analys
 Developing Next.js web and React Native/Expo native experiences that present Oracle identity and Project Q outcomes through shared contracts. **Engineering focus:** cross-client continuity, partial connection states, consistent representations of service data and secure application integration. Screens and integration journeys are validated separately from design prototypes.
 
 ## Inspectable engineering evidence
+
+**[Universal Profile Reconciliation Lab — runnable Python code](examples/identity-reconciliation/README.md)** demonstrates canonical profile continuity, verified-claim attribution, fail-closed ownership conflicts and preservation of existing XP. It includes **12 automated tests** using synthetic identity and account-connection data.
 
 **[Event Reconciliation Lab — runnable Python code](examples/event-reconciliation/README.md)** demonstrates duplicate detection, conflicting-event rejection and order-independent reconciliation using synthetic fixtures. It includes **seven automated tests** and an example evaluating all **120 permutations** of a five-event input, without credentials or external dependencies.
 
