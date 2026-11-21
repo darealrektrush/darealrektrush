@@ -2,15 +2,18 @@
 
 <div align="center">
 
-### Tech Founder · Co-Founder of CrabStar · Full-Stack Systems Engineer
+### Co-Founder of CrabStar · Technical Lead · Systems Builder
 
 **AI Agents · Solana · Blockchain Infrastructure**
 
-I build connected systems for identity, campaign economics and Solana intelligence—across backend services, web and native mobile.
+From building in the physical world to engineering connected digital systems. I lead development across identity, intelligence, on-chain/DeFi economics, and web/native experiences—with a focus on architecture, verification, and meaningful utility.
 
 </div>
 
 ## Selected work
+
+**Four connected systems. Distinct responsibilities. Shared foundations.** The public case studies document the product problems, architecture, engineering tradeoffs and current evidence boundaries—not just screenshots or feature lists.
+
 
 | Project | Development | Focus |
 | --- | --- | --- |
@@ -111,4 +114,5 @@ My background in carpentry, contracting and commercial fishing shapes how I buil
 
 The public material here shows product thinking and selected engineering evidence. Sensitive implementation, operating configuration and private user data remain outside the showcases.
 
-**Forged Below. Building Beyond.**
+**Forged Below. Building Beyond.**  
+*The Tide Rises Together.*
