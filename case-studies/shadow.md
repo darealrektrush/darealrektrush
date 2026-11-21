@@ -69,6 +69,35 @@ Research then preserves data provenance, searches for missing events, reruns det
 
 The private codebase contains Python APIs and workers, PostgreSQL-backed research state, checkpointed ingestion and analysis, wallet and token intelligence, paper evaluation, and staged authorization/outcome modules. The presence of a module or passing unit test is not a claim that a dependent signer, deployment, financial service or complete trading strategy has been validated.
 
+## Engineering verification model
+
+SHADOW's core challenge is not producing more signals—it is **preventing incomplete evidence from being mistaken for actionable conviction**. This is why research conclusions, simulations and financial execution must remain separately qualified.
+
+```mermaid
+flowchart LR
+  O["On-chain observations"] --> P["Provenance and coverage checks"]
+  P --> R["Deterministic research records"]
+  R --> G{"Evidence gates met?"}
+  G -->|"No"| I["Incomplete / quarantine / more research"]
+  G -->|"Yes"| C["Copyability and paper evaluation"]
+  C --> D{"Risk / execution policy satisfied?"}
+  D -->|"No"| I
+  D -. "separate authorization path" .-> X["Restricted execution boundary"]
+```
+
+*Conceptual qualification model, not a deployed trading protocol or confirmation of live capital execution.*
+
+| Engineering concern | Verification question |
+| --- | --- |
+| Historical coverage | Do gaps, unmatched activity or provider limitations affect the conclusion? |
+| Reproducibility | Can a research snapshot be reconstructed using recorded inputs and versions? |
+| Wallet relationships | Does the evidence support independence without confusing timing correlation with ownership? |
+| Execution feasibility | Are fees, latency, price impact and liquidity considered before describing a strategy as copyable? |
+| AI boundaries | Can an agent explain evidence without changing deterministic scoring or risk policy? |
+| Capital controls | Are research, simulation, authorization and signing independent responsibilities? |
+
+A successful unit test of a staged execution contract is evidence of that contract's behavior, **not** proof of operational signing, custody, profitability or a released autonomous trader.
+
 ## My development role
 
 As SHADOW's founding developer and technical lead, I drive the technical direction, core architecture, research and intelligence systems, implementation and verification strategy. SHADOW is a **collaborative build with Andrew**, with both developers credited for their contributions.
