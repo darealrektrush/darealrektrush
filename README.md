@@ -15,9 +15,9 @@ I build connected systems for identity, campaign economics and Solana intelligen
 | Project | Development | Focus |
 | --- | --- | --- |
 | **[Oracle](https://github.com/darealrektrush/oracle-product-case-study)** | Founding developer | Persistent identity, intelligence and community operations |
-| **[Project Q](showcases/project-q.md)** | Founding developer | Campaign infrastructure and programmable economics |
-| **[Shadow](showcases/shadow.md)** | Collaborative CrabStar development | Solana intelligence and staged agentic DeFi |
-| **[Universe](showcases/universe.md)** | Collaborative CrabStar development | Connected web and native mobile experiences |
+| **[Project Q](case-studies/project-q.md)** | Founding developer | Verified participation, on-chain/DeFi mechanics and programmable campaign economics |
+| **[Shadow](case-studies/shadow.md)** | Lead developer; collaborative with [Andrew](https://github.com/Andrew-07) | Solana intelligence and staged agentic DeFi |
+| **[Universe](case-studies/universe.md)** | Lead developer; collaborative with [Andrew](https://github.com/Andrew-07) | Connected web and native mobile experiences |
 
 **[CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem)** · Shared projects, individual contributions.
 
@@ -34,9 +34,9 @@ My work spans product definition, architecture, interface design, AI-assisted im
 | System | Role | Public overview |
 | --- | --- | --- |
 | **Oracle** | Persistent identity, intelligence, reputation and community operations | [Product case study](https://github.com/darealrektrush/oracle-product-case-study) |
-| **Project Q** | Reusable campaigns, participation and economic coordination | [Engineering showcase](showcases/project-q.md) |
-| **Shadow** | Solana intelligence, quantitative research and staged agentic DeFi infrastructure | [Engineering showcase](showcases/shadow.md) |
-| **Universe** | Unified web and native mobile experience for the ecosystem | [Product and architecture](showcases/universe.md) |
+| **Project Q** | Verified participation, on-chain/DeFi mechanics and campaign economics | [Product case study](case-studies/project-q.md) |
+| **Shadow** | Solana intelligence, quantitative research and staged agentic DeFi infrastructure | [Product case study](case-studies/shadow.md) |
+| **Universe** | Unified web and native mobile experience for the ecosystem | [Product case study](case-studies/universe.md) |
 | **Bagwork** | Contribution and impact platform connected through shared services | Oracle/Q integration work; platform built with external collaboration |
 | **Interface Lab** | Oracle intelligence terminal interface prototype | [Design and engineering](showcases/interface-lab.md) |
 | **REKTRUSH AI OS** | Private operator workspace for intelligence and governed agent workflows | [Engineering showcase](showcases/rektrush-os.md) |
@@ -63,7 +63,7 @@ This is a product relationship map, not a live deployment diagram. Dashed relati
 
 **Oracle — continuity across products.** The build connects profiles, account ownership, participation, reputation, intelligence and support workflows. Its expansion carries that foundation beyond Telegram into shared ecosystem services.
 
-**Project Q — participation with traceable outcomes.** Campaign scoring and economic coordination are separate from permanent identity. The build includes campaign logic, economic modules, contribution integration and receipt/reconciliation work.
+**Project Q — participation with traceable outcomes.** Campaign scoring and economic coordination are separate from permanent identity. The build includes campaign logic, on-chain/DeFi economic modules, token distribution and burn workflows, contribution integration, and receipt/reconciliation work. Development scope is not a claim that every financial workflow is live.
 
 **Shadow — evidence before execution.** Wallet histories, token-risk evidence, copyability research and auditable analysis form the intelligence foundation. Simulation and policy-bound execution are staged development areas; research output is not proof of live trading or profitability.
 
