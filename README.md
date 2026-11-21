@@ -114,7 +114,7 @@ My approach to software engineering is rooted in 15 years of experience in carpe
 
 Trained in carpentry at the **British Columbia Institute of Technology (BCIT)**, I developed a foundation in technical planning, structural principles, precision, and practical execution. Working in construction taught me to understand how individual components fit into larger systems, anticipate problems before they become failures, and take responsibility for the finished product.
 
-My background also includes commercial crab fishing on British Columbia's coast, an environment where mechanical knowledge, adaptability, sound judgment, and reliability are essential.
+My background also includes commercial crab fishing along British Columbia’s coast, where working with mechanical systems and equipment in demanding conditions required hands-on engineering, technical problem-solving, adaptability, sound judgment, and reliability.
 
 That same builder's mentality now drives my work in **software engineering, blockchain infrastructure, and decentralized systems**. What began as a genuine interest in decentralized markets, particularly the Solana ecosystem, evolved into hands-on development of interconnected products spanning identity, intelligence, automation, DeFi economics, and web and mobile applications.
 
