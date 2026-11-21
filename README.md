@@ -30,9 +30,13 @@ From building in the physical world to engineering connected digital systems. I 
 
 ## What I'm building
 
-CrabStar is a connected ecosystem where identity, contribution, intelligence and economic participation can work together. Its mission includes long-term impact, beginning with ocean conservation.
+As Co-Founder and Technical Lead of **CrabStar**, I'm building a connected ecosystem of decentralized infrastructure, intelligent applications, and on-chain economic systems on **Solana**. Our vision brings persistent identity, verified participation, reputation, blockchain intelligence, and programmable DeFi mechanics together through interoperable services and applications—with a long-term mission of creating meaningful impact, beginning with ocean conservation.
 
-My work spans product definition, architecture, interface design, AI-assisted implementation, testing, deployment and operations. I use AI agents to accelerate delivery while owning the decisions, verification and outcomes.
+My work spans **full-stack software engineering, distributed systems architecture, blockchain infrastructure, API and service development, database design, automation, and AI-powered intelligence systems**. I design and develop the infrastructure connecting Oracle, Project Q, SHADOW, and Universe—from canonical identity and data models to on-chain integrations, economic coordination, backend services, and web and native mobile experiences.
+
+I take a hands-on approach across the entire engineering lifecycle: **system architecture, technical design, implementation, integration, security, testing, deployment, observability, and production operations**. I leverage AI agents and modern development tools to accelerate research, engineering, and iteration while maintaining direct responsibility for architectural decisions, code quality, verification, and operational reliability.
+
+My focus is on building **scalable, secure, modular, and interoperable systems** that solve real problems, support sustainable decentralized economies, and provide a foundation for long-term ecosystem growth.
 
 | System | Role | Public overview |
 | --- | --- | --- |
