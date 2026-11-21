@@ -46,7 +46,7 @@ My work spans **full-stack development, modular and distributed service architec
 
 ## FAWKQ — community utility & economic experimentation
 
-**[FAWKQ ($FAWKQ)](https://fawkq.com/)** is a Solana ecosystem token originally centered on **Bagwork**, community participation and contribution-driven economic mechanics. Its growing relationship with **Oracle × Project Q** connects verified identity and wallet facts with campaign eligibility, programmable economic coordination, and traceable on-chain rewards.
+**[FAWKQ ($FAWKQ)](https://fawkq.com/)** is a Solana ecosystem token rooted in **Bagwork**, community participation, and contribution-driven economics, with **Project Q's on-chain token distribution and reward coordination infrastructure** extending those mechanics. Its integration direction with **Oracle × Project Q** connects verified identity and wallet facts to campaign eligibility, programmable economics, distributions, and traceable settlement evidence.
 
 FAWKQ is an early proving environment for CrabStar's wider participation and DeFi infrastructure. Individual integrations and financial workflows remain subject to their own implementation and verification stages.
 
