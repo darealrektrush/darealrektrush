@@ -1,8 +1,8 @@
 # CrabStar Universe
 ### One ecosystem · Web and native mobile · Shared identity
 
-**Co-founding developer & technical lead:** [Thomas Phillips](https://github.com/darealrektrush)  
-**Collaborative developers:** [Thomas Phillips](https://github.com/darealrektrush) & [Andrew](https://github.com/Andrew-07)
+**Co-Founding Developer & Technical Lead:** [Thomas Phillips](https://github.com/darealrektrush)  
+**Collaborative Developers:** [Thomas Phillips](https://github.com/darealrektrush) & [Andrew](https://github.com/Andrew-07)
 
 [← Engineering portfolio](../README.md) · [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem) · [Original engineering showcase](../showcases/universe.md)
 
