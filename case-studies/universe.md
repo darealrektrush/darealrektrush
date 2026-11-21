@@ -74,6 +74,44 @@ The private Universe repository includes a **Next.js / React web application**, 
 
 The current design program includes continued work on screen structure, UX and Figma layouts. These evolving artifacts are **design evidence**, not proof that each screen is implemented or that an app is available in public stores.
 
+## Integration contracts and UX states
+
+Universe is designed to unify experiences while keeping the **source of truth in Oracle and Project Q**. A polished interface is not enough: identity ownership, campaign results and settlement status must remain consistent when a client reconnects or a service becomes unavailable.
+
+```mermaid
+sequenceDiagram
+  participant M as Member
+  participant U as Universe Client
+  participant A as Universe API
+  participant O as Oracle
+  participant Q as Project Q
+  M->>U: Open ecosystem profile
+  U->>A: Request authenticated view
+  A->>O: Resolve canonical profile and connections
+  O-->>A: Verified facts / partial state
+  A->>Q: Request applicable campaign projection
+  Q-->>A: Eligibility and outcome state
+  A-->>U: Composed view with explicit status
+  U-->>M: Profile, progress and next actions
+```
+
+*Illustrative contract; not a claim that this end-to-end sequence is fully deployed or accepted.*
+
+| Journey | Essential engineering check |
+| --- | --- |
+| Returning member sign-in | Existing Oracle identity and reputation are preserved without unintended duplication |
+| Partial account verification | Wallet and social features display accurate pending/required states |
+| Campaign participation | Q remains authoritative for campaign decisions and allocations |
+| Financial receipts | Pending allocations are not displayed as settled transfers |
+| Service degradation | Incomplete or unavailable projections show recovery/refresh paths rather than invented values |
+| Web/mobile parity | Shared contracts behave consistently despite platform-specific navigation |
+
+### Product evolution and development ownership
+
+Universe began as a shared concept between CrabStar's co-founders. After an early placeholder interface, Thomas led a substantial redevelopment of the technical architecture and application direction around Oracle's shared identity/intelligence infrastructure and Project Q's campaign/economic services. Universe remains a collaborative build with Andrew, whose web development expertise and work on connected ecosystem products contribute to its long-term integration direction.
+
+Design prototypes, implemented screens, completed backend contracts and end-to-end member acceptance are separate stages of evidence.
+
 ## My development role
 
 As a co-founding developer and technical lead, I drive Universe's technical architecture, application and integration development, product-system decisions and implementation quality. Universe is a **collaborative build with Andrew**, with both developers credited for their contributions.
