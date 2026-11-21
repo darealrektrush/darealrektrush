@@ -1,107 +1,87 @@
-# CrabStar Universe — One Ecosystem Across Web and Mobile
-
-> **Public product and engineering case study.** The implementation repository is private. This document describes reviewed design and engineering scope without disclosing privileged operations or claiming an unverified production release.
+# CrabStar Universe
+### One ecosystem · Web and native mobile · Shared identity
 
 **Lead developer:** [Thomas Phillips](https://github.com/darealrektrush)  
-**Collaborative developers:** [Thomas Phillips](https://github.com/darealrektrush) and [Andrew](https://github.com/Andrew-07)
+**Collaborative developers:** [Thomas Phillips](https://github.com/darealrektrush) & [Andrew](https://github.com/Andrew-07)
 
-[Personal engineering profile](../README.md) · [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem) · [Original engineering showcase](../showcases/universe.md)
+[← Engineering portfolio](../README.md) · [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem) · [Original engineering showcase](../showcases/universe.md)
+
+> **Public product and engineering case study.** Figma design, code in a repository, integration acceptance and production/mobile-store availability are separate milestones.
 
 ## Executive summary
 
-Universe is CrabStar's unified web and native mobile experience. It brings Oracle-owned identity, intelligence and reputation together with Project Q campaigns, verified participation and economic receipts, while leaving authority for those functions in their respective backend services.
+CrabStar Universe is the connected web and native mobile experience for the CrabStar ecosystem. The goal is a coherent product where members can enter once, claim a persistent identity, understand their Crab Army reputation, discover experiences and follow verified participation and economic outcomes.
 
-## Problem and engineering approach
+Universe is the **experience layer**. Oracle owns canonical identity, verified connections, intelligence and reputation; Project Q owns campaign eligibility, scoring, on-chain/DeFi economic mechanics and settlement records.
 
-**Key engineering challenge:** One canonical profile must stay consistent across devices and product surfaces without duplicating identity, reward balances or wallet-verification authority. Partial connection and unavailable states must be truthful.
+## The problem
 
-## Architecture, tradeoffs and representative scenario
+A growing ecosystem can quickly become a fragmented collection of Telegram flows, campaign apps, dashboards and disconnected profiles. Members should not need to create duplicate identities or guess whether the rewards shown in one interface agree with another.
 
-### The problem
+The challenge is to make one continuity layer work across products and devices **without moving domain authority into the client**.
 
-Connected infrastructure is difficult to use when people must repeatedly switch tools, reconnect accounts and piece together their history.
-
-Universe is intended to give those shared services one coherent experience while preserving their independent responsibilities.
-
-### A practical engineering scenario
-
-A member enters on mobile, returns on web, and has only some account connections verified. The application should preserve their canonical profile and show which experience is available next, without inventing eligibility or reward state.
-
-The design challenge spans authentication continuity, platform-specific navigation and honest projections of services that may be incomplete or unavailable.
-
-### Client and authority boundaries
+## Product and service architecture
 
 ```mermaid
 flowchart TD
-    W["Next.js web client"] --> A["Application API"]
-    M["React Native and Expo client"] --> A
-    A --> O["Oracle identity and intelligence"]
-    A --> Q["Q campaign and economic state"]
-    O --> P["Profile and connection projections"]
-    Q --> C["Campaign and receipt projections"]
+  W["Next.js / React web"] --> A["Universe application API"]
+  M["React Native / Expo iOS & Android"] --> A
+  A --> O["Oracle: identity, connections, intelligence, Crab Army"]
+  A --> Q["Project Q: campaigns, eligibility, economics, receipts"]
+  A -. "bounded integration" .-> B["Bagwork / ecosystem experiences"]
+  O --> P["Shared profile & reputation projections"]
+  Q --> C["Campaign & settlement projections"]
+  P --> W
+  P --> M
+  C --> W
+  C --> M
 ```
 
-This illustrates intended authority boundaries. It does not certify that every client-to-service path is integrated or deployed.
+*Conceptual service responsibilities; not a fully verified deployment diagram.*
 
-### Decisions and tradeoffs
+## Core experience pillars
 
-| Decision | Why it matters | Cost to manage |
+| Experience | Member benefit | Source of truth |
 | --- | --- | --- |
-| Share service contracts, retain distinct clients | Identity can remain consistent across devices | Web and native require separate validation |
-| Present Oracle and Q state | The app avoids duplicating permanent identity and campaign authority | Service outages need clear interface states |
-| Use platform-appropriate navigation | Mobile and desktop can fit their own interaction patterns | Design parity needs visual and behavioral review |
+| Ecosystem entry | Progressive onboarding and existing-profile claiming | Oracle |
+| Universal Profile | Identity, linked accounts, wallets and durable history | Oracle |
+| Crab Army | XP, ranks, contribution and recognition | Oracle |
+| Oracle intelligence | Contextual questions, community and market intelligence | Oracle |
+| Project Q campaigns | Participation, eligibility, missions and progress | Project Q |
+| On-chain economic outcomes | Clear reward, pending, settled and receipt states | Project Q / verified chain evidence |
+| Ecosystem discovery | Access to connected products and contribution opportunities | Bounded product integrations |
 
-### Product direction
+## Representative design scenario
 
-| Experience | Role |
-| --- | --- |
-| Universal Profile | Present persistent identity, connection state and reputation |
-| Oracle | Make intelligence and assistance available across the application |
-| Campaigns and rewards | Present Q participation, progress and economic receipts |
-| Ecosystem discovery | Connect contribution, community and other product experiences |
-| Multiple clients | Share identity and service contracts across web and mobile |
+An existing Telegram member signs into Universe on a new device, links a wallet and enters a campaign.
 
-Oracle remains the authority for identity and reputation. Q remains the campaign/economic authority. Universe presents their state rather than creating a competing source of truth.
+The app should **claim the existing Oracle profile**, preserve their earlier XP and history, reflect partial verification honestly, show campaign eligibility from Q, and avoid displaying an allocation as paid before chain evidence confirms settlement.
 
-### Architecture direction
+The experience may look unified; its trust boundaries remain explicit.
 
-The approved client architecture uses Next.js for web/desktop and React Native with Expo for native mobile. Clients are intended to share API contracts, validation, identity types and design foundations while using platform-appropriate interfaces.
+## Architecture and interface decisions
 
-The native mobile direction includes iOS and Android clients. This is architectural intent, not a claim of App Store or Google Play availability.
+- **One profile, not one database per app:** Oracle remains the canonical authority.
+- **Client-specific experience:** web/desktop and native mobile can differ in navigation and interaction while sharing validated service contracts.
+- **Progressive connections:** additional Telegram, X and Solana proofs are requested when a feature needs them.
+- **Honest async states:** loading, missing proof, errors, pending rewards and confirmed results receive distinct UI treatments.
+- **Secure service integration:** privileged credentials, wallet assertions and financial controls stay server-side.
+- **Design-to-build verification:** Figma layouts, component implementation and real integration paths must be evaluated separately.
 
-### Engineering priorities
+## Engineering footprint
 
-- Preserve account and contribution continuity across clients.
-- Reuse backend services rather than duplicate business logic per interface.
-- Keep privileged credentials out of client applications.
-- Present partial connections, unavailable services and recovery steps clearly.
-- Give desktop and native mobile their own appropriate interaction design.
+The private Universe repository includes a **Next.js / React web application**, an **Express / TypeScript server** and a **React Native / Expo mobile client**, together with architecture specifications and mobile preview/visual-QA workflows.
 
-### Current stage
+The current design program includes continued work on screen structure, UX and Figma layouts. These evolving artifacts are **design evidence**, not proof that each screen is implemented or that an app is available in public stores.
 
-Active application development and integration. The default branch contains separate Next.js web, Express/TypeScript API and React Native/Expo mobile packages, alongside home/native architecture specifications and mobile preview/visual-QA workflows.
+## My development role
 
-Package presence and workflow definitions demonstrate build scope. Shared identity, intelligence and campaign journeys still require end-to-end verification.
+I lead technical architecture, application and integration development, product-system decisions and implementation quality. Universe is a **collaborative development project with Andrew**, and both contributors are credited.
 
-Representative manifest review confirms Next.js/React for web and React Native/Expo for mobile. A shared-package extraction remains architecture direction rather than a completed monorepo claim.
+## Current stage
 
-This page does not certify deployment, store release or feature completeness.
+**Status: active product design, application development and integration.** The shared Oracle × Project Q experience requires exact, environment-specific verification before broad release claims. Store publication and completed end-to-end member journeys are not asserted here.
 
+Public information intentionally excludes private deployment configuration, unreleased access and recovery procedures, and identifiable member records.
 
-
-## Development ownership
-
-**Lead developer:** [Thomas Phillips](https://github.com/darealrektrush)  
-**Collaborative developers:** [Thomas Phillips](https://github.com/darealrektrush) and [Andrew](https://github.com/Andrew-07)
-
-This work combines product and architecture decisions, iterative implementation, integration review, verification and operational tradeoffs. Collaborative credit identifies shared development without equating authorship of distinct systems.
-
-## Current evidence boundary
-
-Ongoing web, API and React Native/Expo development, with Figma screen/layout work in progress. Shared service journeys require explicit end-to-end verification; the project is not represented as a released app.
-
-The private implementation repository is [crabstar-universe](https://github.com/CrabStar-Ecosystem/crabstar-universe). Code, working prototypes, test results, deployed services, actual settlements and released product availability are distinct kinds of evidence.
-
-## Publication boundary
-
-This page intentionally excludes secrets, sensitive system details, private participant records, strategy parameters and transaction authorization configuration.
+**One identity. One ecosystem. Multiple clients.**
