@@ -1,7 +1,7 @@
 # CrabStar Universe
 ### One ecosystem · Web and native mobile · Shared identity
 
-**Lead developer:** [Thomas Phillips](https://github.com/darealrektrush)  
+**Co-founding developer & technical lead:** [Thomas Phillips](https://github.com/darealrektrush)  
 **Collaborative developers:** [Thomas Phillips](https://github.com/darealrektrush) & [Andrew](https://github.com/Andrew-07)
 
 [← Engineering portfolio](../README.md) · [CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem) · [Original engineering showcase](../showcases/universe.md)
@@ -76,7 +76,7 @@ The current design program includes continued work on screen structure, UX and F
 
 ## My development role
 
-I lead technical architecture, application and integration development, product-system decisions and implementation quality. Universe is a **collaborative development project with Andrew**, and both contributors are credited.
+As a co-founding developer and technical lead, I drive Universe's technical architecture, application and integration development, product-system decisions and implementation quality. Universe is a **collaborative build with Andrew**, with both developers credited for their contributions.
 
 ## Current stage
 
