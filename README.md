@@ -108,9 +108,17 @@ Stacks vary by project. Planned client platforms and active integrations are dis
 
 These are development priorities, not release-date or commercial-availability promises.
 
-## Builder/operator first
+## A Builder's Mindset. From the Trades to Technology.
 
-My background in carpentry, contracting and commercial fishing shapes how I build: understand the constraints, make the decisions, deliver useful work and remain accountable for it.
+My approach to software engineering is rooted in 15 years of experience in carpentry and the building industry, including running contracting businesses and managing complex residential projects. Combined with a lifelong hands-on background in building and mechanics, that experience shaped how I approach technical challenges, system design, and problem-solving.
+
+Trained in carpentry at the **British Columbia Institute of Technology (BCIT)**, I developed a foundation in technical planning, structural principles, precision, and practical execution. Working in construction taught me to understand how individual components fit into larger systems, anticipate problems before they become failures, and take responsibility for the finished product.
+
+My background also includes commercial crab fishing on British Columbia's coast, an environment where mechanical knowledge, adaptability, sound judgment, and reliability are essential.
+
+That same builder's mentality now drives my work in **software engineering, blockchain infrastructure, and decentralized systems**. What began as a genuine interest in decentralized markets, particularly the Solana ecosystem, evolved into hands-on development of interconnected products spanning identity, intelligence, automation, DeFi economics, and web and mobile applications.
+
+I continue expanding my technical knowledge through practical development, systems architecture, emerging technologies, and AI-assisted engineering—applying the same principles that have guided my work throughout the trades: **understand the system, build with purpose, solve real problems, and take ownership of the outcome.**
 
 The public material here shows product thinking and selected engineering evidence. Sensitive implementation, operating configuration and private user data remain outside the showcases.
 
