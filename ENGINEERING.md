@@ -9,9 +9,9 @@ The portfolio spans persistent identity, campaign economics, on-chain research a
 | Interest | Start with | What you can inspect |
 | --- | --- | --- |
 | End-to-end product ownership | [Oracle case study](https://github.com/darealrektrush/oracle-product-case-study) | Historical interface examples, service architecture and engineering decisions |
-| Campaign and economic systems | [Project Q](showcases/project-q.md) | Identity authority, partial outcomes and calculation/settlement boundaries |
-| AI and Solana research | [Shadow](showcases/shadow.md) | Evidence quality, research reproducibility and staged execution boundaries |
-| Applications across devices | [Universe](showcases/universe.md) | Web/native clients and shared-service authority |
+| Campaign and economic systems | [Project Q](case-studies/project-q.md) | Identity authority, partial outcomes and calculation/settlement boundaries |
+| AI and Solana research | [Shadow](case-studies/shadow.md) | Evidence quality, research reproducibility and staged execution boundaries |
+| Applications across devices | [Universe](case-studies/universe.md) | Web/native clients and shared-service authority |
 | Executable engineering | [Event Reconciliation Lab](examples/event-reconciliation/README.md) | Python source, synthetic events and seven tests |
 
 ## Run the public example
