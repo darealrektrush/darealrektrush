@@ -38,12 +38,12 @@ I take a hands-on approach across the entire engineering lifecycle: **system arc
 
 My focus is on building **scalable, secure, modular, and interoperable systems** that solve real problems, support sustainable decentralized economies, and provide a foundation for long-term ecosystem growth.
 
-| System | Role | Public overview |
+| System | Core Infrastructure & Capabilities | Engineering |
 | --- | --- | --- |
-| **Oracle** | Persistent identity, intelligence, reputation and community operations | [Product case study](https://github.com/darealrektrush/oracle-product-case-study) |
-| **Project Q** | Verified participation, on-chain/DeFi mechanics and campaign economics | [Product case study](case-studies/project-q.md) |
-| **Shadow** | Solana intelligence, quantitative research and staged agentic DeFi infrastructure | [Product case study](case-studies/shadow.md) |
-| **Universe** | Unified web and native mobile experience for the ecosystem | [Product case study](case-studies/universe.md) |
+| **Oracle** | Persistent identity, Universal Profiles, reputation systems, AI-powered intelligence, Solana analytics, automation and ecosystem operations | [Case study](https://github.com/darealrektrush/oracle-product-case-study) |
+| **Project Q** | Programmable campaign infrastructure, verified participation, on-chain/DeFi economics, token distributions, settlement and economic coordination | [Case study](case-studies/project-q.md) |
+| **SHADOW** | Advanced Solana intelligence, on-chain wallet analytics, quantitative research, token forensics, AI-assisted agents and governed DeFi execution infrastructure | [Case study](case-studies/shadow.md) |
+| **Universe** | Unified web and native mobile platform connecting Universal Profiles, intelligence, reputation, community experiences and decentralized economic infrastructure | [Case study](case-studies/universe.md) |
 | **Bagwork** | Contribution and impact platform connected through shared services | Oracle/Q integration work; platform built with external collaboration |
 | **Interface Lab** | Oracle intelligence terminal interface prototype | [Design and engineering](showcases/interface-lab.md) |
 | **REKTRUSH AI OS** | Private operator workspace for intelligence and governed agent workflows | [Engineering showcase](showcases/rektrush-os.md) |
