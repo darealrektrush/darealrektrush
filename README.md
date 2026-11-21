@@ -4,127 +4,131 @@
 
 ### Co-Founder of CrabStar · Technical Lead · Systems Builder
 
-**AI Agents · Solana · Blockchain Infrastructure**
+**Full-Stack Engineering · Systems Architecture · Solana / DeFi · AI Agents**
 
-From building in the physical world to engineering connected digital systems. I lead development across identity, intelligence, on-chain/DeFi economics, and web/native experiences—with a focus on architecture, verification, and meaningful utility.
+I architect and build connected systems spanning persistent identity, AI-powered intelligence, programmable on-chain economics, and web and native mobile applications.
 
-</div>
+From physical construction and mechanical systems to decentralized infrastructure, I bring a builder's mindset to complex technical problems: understand the whole system, engineer for reliability, and own the result.
 
-## Selected work
-
-**Four connected systems. Distinct responsibilities. Shared foundations.** The public case studies document the product problems, architecture, engineering tradeoffs and current evidence boundaries—not just screenshots or feature lists.
-
-
-| Project | Development | Focus |
-| --- | --- | --- |
-| **[Oracle](https://github.com/darealrektrush/oracle-product-case-study)** | Founding developer | Persistent identity, intelligence and community operations |
-| **[Project Q](case-studies/project-q.md)** | Founding developer | Verified participation, on-chain/DeFi mechanics and programmable campaign economics |
-| **[Shadow](case-studies/shadow.md)** | Lead developer; collaborative with [Andrew](https://github.com/Andrew-07) | Solana intelligence and staged agentic DeFi |
-| **[Universe](case-studies/universe.md)** | Lead developer; collaborative with [Andrew](https://github.com/Andrew-07) | Connected web and native mobile experiences |
-
-**[CrabStar Ecosystem](https://github.com/CrabStar-Ecosystem)** · Shared projects, individual contributions.
-
-[**Inspect working code**](examples/event-reconciliation/README.md) · [Engineering evidence](ENGINEERING.md) · [X / Trench Intel](https://x.com/darealrektrush)
+[**CrabStar Ecosystem**](https://github.com/CrabStar-Ecosystem) · [**Engineering evidence**](ENGINEERING.md) · [**Runnable code**](examples/event-reconciliation/README.md)
 
 [![Portfolio checks](https://github.com/darealrektrush/darealrektrush/actions/workflows/portfolio-checks.yml/badge.svg)](https://github.com/darealrektrush/darealrektrush/actions/workflows/portfolio-checks.yml)
 
+</div>
+
+## Technical leadership & development
+
+I co-founded **CrabStar** and lead technical development across interconnected infrastructure and application projects. Founding development and collaborative development are credited distinctly.
+
+| Project | Development responsibility | Public case study |
+| --- | --- | --- |
+| **Oracle** | **Founding developer** | [Identity & intelligence](https://github.com/darealrektrush/oracle-product-case-study) |
+| **Project Q** | **Founding developer** | [Campaign economics & DeFi](case-studies/project-q.md) |
+| **SHADOW** | **Lead developer**; collaborative development with [Andrew](https://github.com/Andrew-07) | [Solana intelligence](case-studies/shadow.md) |
+| **Universe** | **Lead developer**; collaborative development with [Andrew](https://github.com/Andrew-07) | [Web & native applications](case-studies/universe.md) |
+
 ## What I'm building
 
-As Co-Founder and Technical Lead of **CrabStar**, I'm building a connected ecosystem of decentralized infrastructure, intelligent applications, and on-chain economic systems on **Solana**. Our vision brings persistent identity, verified participation, reputation, blockchain intelligence, and programmable DeFi mechanics together through interoperable services and applications—with a long-term mission of creating meaningful impact, beginning with ocean conservation.
+**CrabStar** is an interconnected ecosystem on Solana, designed to bring verified identity, participation, intelligence and economic coordination into reusable infrastructure. Its long-term mission is to create meaningful impact, beginning with **ocean conservation**.
 
-My work spans **full-stack software engineering, distributed systems architecture, blockchain infrastructure, API and service development, database design, automation, and AI-powered intelligence systems**. I design and develop the infrastructure connecting Oracle, Project Q, SHADOW, and Universe—from canonical identity and data models to on-chain integrations, economic coordination, backend services, and web and native mobile experiences.
+My work spans **full-stack development, modular and distributed service architecture, APIs, data modeling, automation, AI-assisted engineering, Solana integrations, security boundaries, testing and operations**. The goal is to make independent products work together without duplicating ownership of identity, campaign state or financial decisions.
 
-I take a hands-on approach across the entire engineering lifecycle: **system architecture, technical design, implementation, integration, security, testing, deployment, observability, and production operations**. I leverage AI agents and modern development tools to accelerate research, engineering, and iteration while maintaining direct responsibility for architectural decisions, code quality, verification, and operational reliability.
-
-My focus is on building **scalable, secure, modular, and interoperable systems** that solve real problems, support sustainable decentralized economies, and provide a foundation for long-term ecosystem growth.
-
-| System | Core Infrastructure & Capabilities | Engineering |
+| System | Core infrastructure & capabilities | Explore |
 | --- | --- | --- |
-| **Oracle** | Persistent identity, Universal Profiles, reputation systems, AI-powered intelligence, Solana analytics, automation and ecosystem operations | [Case study](https://github.com/darealrektrush/oracle-product-case-study) |
-| **Project Q** | Programmable campaign infrastructure, verified participation, on-chain/DeFi economics, token distributions, settlement and economic coordination | [Case study](case-studies/project-q.md) |
-| **SHADOW** | Advanced Solana intelligence, on-chain wallet analytics, quantitative research, token forensics, AI-assisted agents and governed DeFi execution infrastructure | [Case study](case-studies/shadow.md) |
-| **Universe** | Unified web and native mobile platform connecting Universal Profiles, intelligence, reputation, community experiences and decentralized economic infrastructure | [Case study](case-studies/universe.md) |
-| **Bagwork** | Contribution and impact platform connected through shared services | Oracle/Q integration work; platform built with external collaboration |
-| **Interface Lab** | Oracle intelligence terminal interface prototype | [Design and engineering](showcases/interface-lab.md) |
-| **REKTRUSH AI OS** | Private operator workspace for intelligence and governed agent workflows | [Engineering showcase](showcases/rektrush-os.md) |
-| **Revenue Operations** | Sustainable operating models for Oracle infrastructure | [Public overview](showcases/sustainable-operations.md) |
-| **FAWKQ** | Testing and activation asset for campaign and economic experiments | A proving environment for the broader build |
+| **Oracle** | Persistent identity, Universal Profiles, reputation, AI-powered intelligence, Solana analytics, automation and ecosystem operations | [Case study](https://github.com/darealrektrush/oracle-product-case-study) |
+| **Project Q** | Programmable campaigns, verified participation, on-chain/DeFi economic mechanics, token distributions, settlement coordination and economic receipts | [Case study](case-studies/project-q.md) |
+| **SHADOW** | Solana wallet intelligence, quantitative research, token forensics, copyability analysis, AI-assisted agents and staged, policy-governed DeFi execution infrastructure | [Case study](case-studies/shadow.md) |
+| **Universe** | Unified web/native mobile experiences integrating identity, intelligence, reputation, campaigns and economic infrastructure | [Case study](case-studies/universe.md) |
 
-## How the systems fit together
+**Adjacent ecosystem work:** **Bagwork** connects contribution and impact through Oracle/Q integration work developed with external collaboration; **FAWKQ** is a proving environment for campaign and economic experiments. Other areas include [Interface Lab](showcases/interface-lab.md), [REKTRUSH AI OS](showcases/rektrush-os.md), and [Revenue Operations](showcases/sustainable-operations.md).
 
-The architecture separates responsibilities so products can share capabilities without duplicating authority.
+**Development-stage note:** These descriptions cover implemented foundations and active product direction. They do not claim that every integration, on-chain financial operation or execution capability is live.
+
+## Ecosystem architecture
+
+A shared profile should remain consistent across products while each service retains responsibility for its own decisions.
 
 ```mermaid
 flowchart TD
-    U["Universe: unified experience"] --> O["Oracle: identity and intelligence"]
-    U --> Q["Project Q: campaigns and economics"]
-    B["Bagwork: contribution and impact"] -. "integration work" .-> O
-    B -. "integration work" .-> Q
-    Q -->|"verified campaign progression"| O
-    S["Shadow: DeFi intelligence and agents"] -. "future ecosystem integration" .-> U
+    U["Universe · Web / Native Experience"] --> O["Oracle · Identity / Intelligence / Reputation"]
+    U --> Q["Project Q · Campaigns / Economics"]
+    O -->|"verified identity & wallet facts"| Q
+    Q -->|"accepted campaign progression"| O
+    B["Bagwork · Contribution / Impact"] -. "integration in development" .-> O
+    B -. "integration in development" .-> Q
+    S["SHADOW · Independent Research / DeFi"] -. "future bounded product integration" .-> U
 ```
 
-This is a product relationship map, not a live deployment diagram. Dashed relationships represent development or future integration.
+*Conceptual authority and integration map, not a live deployment diagram. Dashed paths represent developing or future integrations. SHADOW's research and execution policy remains independent of community reputation and campaign economics.*
 
-## Selected engineering work
+## Selected systems engineering
 
-**Oracle — continuity across products.** The build connects profiles, account ownership, participation, reputation, intelligence and support workflows. Its expansion carries that foundation beyond Telegram into shared ecosystem services.
+### Oracle — identity continuity and intelligence
 
-**Project Q — participation with traceable outcomes.** Campaign scoring and economic coordination are separate from permanent identity. The build includes campaign logic, on-chain/DeFi economic modules, token distribution and burn workflows, contribution integration, and receipt/reconciliation work. Development scope is not a claim that every financial workflow is live.
+Building canonical profiles, connection ownership and recovery, reputation, community operations and AI-assisted intelligence across Telegram and shared ecosystem APIs. **Engineering focus:** identity integrity, authenticated service boundaries, explainable data, recoverable workflows and operational observability.
 
-**Shadow — evidence before execution.** Wallet histories, token-risk evidence, copyability research and auditable analysis form the intelligence foundation. Simulation and policy-bound execution are staged development areas; research output is not proof of live trading or profitability.
+### Project Q — economic correctness from participation to settlement
 
-**Universe — one ecosystem across clients.** The application direction combines a Next.js web experience with React Native/Expo mobile clients using shared Oracle and Q contracts.
+Developing campaign-specific evidence, eligibility and scoring, token-aware mechanics, allocation and release workflows, and verifiable receipts. **Engineering focus:** deterministic decisions, replay safety, authorization boundaries and distinguishing a recorded allocation from confirmed on-chain settlement. Strategic airdrops remain deferred.
 
-## Runnable engineering example
+### SHADOW — evidence before execution
 
-[**Event Reconciliation Lab**](examples/event-reconciliation/README.md) — an offline Python example demonstrating duplicate handling, conflicting-event rejection and order-independent reconciliation. Includes synthetic fixtures and seven executable tests; no credentials or dependencies required.
+Building wallet and token research pipelines, accounting-aware historical analysis, copyability evaluation, paper simulation and staged agentic infrastructure. **Engineering focus:** data provenance, missing-evidence handling, repeatability, independent risk gates and strict separation of intelligence from signing and live execution. No claim of live autonomous trading or demonstrated profitability.
 
-This standalone educational example illustrates an engineering concern without exposing production implementation.
+### Universe — one experience, distinct authorities
 
-## Engineering priorities
+Developing Next.js web and React Native/Expo native experiences that present Oracle identity and Project Q outcomes through shared contracts. **Engineering focus:** cross-client continuity, partial connection states, consistent representations of service data and secure application integration. Screens and integration journeys are validated separately from design prototypes.
 
-| Concern | How it shapes the work |
+## Inspectable engineering evidence
+
+**[Event Reconciliation Lab — runnable Python code](examples/event-reconciliation/README.md)** demonstrates duplicate detection, conflicting-event rejection and order-independent reconciliation using synthetic fixtures. It includes **seven automated tests** and an example evaluating all **120 permutations** of a five-event input, without credentials or external dependencies.
+
+[**Explore the engineering evidence index**](ENGINEERING.md) to see what the public examples and project case studies actually establish—and what still requires hosted or production verification.
+
+The lab is educational, not production settlement code. Public documentation intentionally excludes secrets, privileged infrastructure, private member data and proprietary research details.
+
+## Technology & engineering practice
+
+| Discipline | Technologies and focus |
 | --- | --- |
-| Data integrity | Explicit ownership, attributable events and controlled retries |
-| Intelligence quality | Freshness, incomplete-data states and explainable evidence |
-| Reliability | Recoverable workflows, diagnostics and operational verification |
-| Financial workflows | Separate calculation, authorization, execution and reconciliation |
-| Product experience | Clear next actions, mobile usability and understandable receipts |
-| Sustainable operation | Bounded provider usage, cost awareness and maintainable services |
+| **Backend & services** | Python, FastAPI, Node.js, Express, REST APIs, background and scheduled workers |
+| **Web & native applications** | TypeScript, React, Next.js, React Native, Expo |
+| **Solana / DeFi** | Solana Web3, wallet and token integration, on-chain data, economic and settlement boundaries |
+| **Data & persistence** | PostgreSQL, Supabase, SQL, versioned migrations, integrity and replay-safe processing |
+| **AI & automation** | LLM APIs, AI agents, tool-assisted workflows and evidence-grounded intelligence |
+| **Infrastructure & delivery** | GitHub Actions, Render, CI/CD, environment separation, diagnostics and observability |
+| **Identity & assurance** | OAuth, verified account ownership, authenticated service contracts, authorization, auditability and reconciliation |
 
-## Technology across the builds
+**How I engineer:** separate domain authority, validate assumptions with tests, make incomplete states visible, isolate privileged actions, design for recoverability and treat deployment evidence as distinct from source-level correctness. AI agents accelerate research, implementation and review; I remain responsible for architecture, validation and operational outcomes.
 
-**Backend:** Python · FastAPI · Node.js · Express  
-**Applications:** React · Next.js · TypeScript · React Native · Expo  
-**Data:** PostgreSQL · Supabase · versioned migrations  
-**Integrations:** Telegram · OAuth · Solana · market-data providers · AI APIs  
-**Delivery:** GitHub Actions · Render · automated checks · operational diagnostics
+Stacks, integration maturity and release status vary by project. The linked case studies distinguish source-level work, tests, active integration and verified deployments.
 
-Stacks vary by project. Planned client platforms and active integrations are distinguished in the individual showcases.
+## A builder's mindset — from the trades to technology
 
-## Current direction
+My approach to engineering comes from **15 years in carpentry and the building industry**, including operating contracting businesses and managing complex residential projects, together with a lifelong hands-on background in building and mechanics.
 
-- Validate shared identity and campaign journeys across Oracle, Q and Bagwork.
-- Use FAWKQ experiments to test mechanics before broader CrabStar programs.
-- Advance Shadow's intelligence and controlled research infrastructure toward its MVP.
-- Bring proven shared services into Universe's web and native mobile experience.
+I trained in carpentry at the **British Columbia Institute of Technology (BCIT)**, developing a practical foundation in structural principles, technical planning, precision and execution. Construction taught me to think in dependencies: understand the foundation, coordinate interconnected systems, anticipate failures and take responsibility for what gets built.
 
-These are development priorities, not release-date or commercial-availability promises.
+I also worked in **commercial crab fishing along British Columbia's coast**, where mechanical systems, equipment troubleshooting, adaptability and sound judgment matter in demanding conditions.
 
-## A Builder's Mindset. From the Trades to Technology.
+That experience carried into a genuine interest in decentralized markets and Solana, then into hands-on development of blockchain infrastructure, intelligent services and cross-platform applications. I continue developing my skills through building, studying emerging technologies and applying systems thinking across the full engineering lifecycle.
 
-My approach to software engineering is rooted in 15 years of experience in carpentry and the building industry, including running contracting businesses and managing complex residential projects. Combined with a lifelong hands-on background in building and mechanics, that experience shaped how I approach technical challenges, system design, and problem-solving.
+**Understand the system. Build with purpose. Solve real problems. Own the outcome.**
 
-Trained in carpentry at the **British Columbia Institute of Technology (BCIT)**, I developed a foundation in technical planning, structural principles, precision, and practical execution. Working in construction taught me to understand how individual components fit into larger systems, anticipate problems before they become failures, and take responsibility for the finished product.
+## Current development direction
 
-My background also includes commercial crab fishing along British Columbia’s coast, where working with mechanical systems and equipment in demanding conditions required hands-on engineering, technical problem-solving, adaptability, sound judgment, and reliability.
+- **Oracle × Project Q:** Validate shared identity, participation, wallet eligibility and economic receipt journeys across products.
+- **Universe:** Bring verified Oracle and Q services into coherent web and native mobile experiences.
+- **SHADOW:** Advance independent wallet discovery, research quality and controlled paper-evaluation infrastructure.
+- **CrabStar ecosystem:** Apply proven integration contracts to contribution, game and other product experiences without duplicating core authorities.
 
-That same builder's mentality now drives my work in **software engineering, blockchain infrastructure, and decentralized systems**. What began as a genuine interest in decentralized markets, particularly the Solana ecosystem, evolved into hands-on development of interconnected products spanning identity, intelligence, automation, DeFi economics, and web and mobile applications.
+These are current engineering priorities, not release dates, completed deployment claims or financial promises.
 
-I continue expanding my technical knowledge through practical development, systems architecture, emerging technologies, and AI-assisted engineering—applying the same principles that have guided my work throughout the trades: **understand the system, build with purpose, solve real problems, and take ownership of the outcome.**
+---
 
-The public material here shows product thinking and selected engineering evidence. Sensitive implementation, operating configuration and private user data remain outside the showcases.
+<div align="center">
 
 **Forged Below. Building Beyond.**  
 *The Tide Rises Together.*
+
+</div>
