@@ -6,11 +6,11 @@
 
 **Full-Stack Engineering · Systems Architecture · Solana / DeFi · AI Agents**
 
-I architect and build connected systems spanning persistent identity, AI-powered intelligence, programmable on-chain economics, and web and native mobile applications.
+I'm Thomas Phillips, a carpenter from British Columbia and the founding developer of Oracle and Project Q. I build systems on Solana that connect identity, participation and rewards.
 
-From physical construction and mechanical systems to decentralized infrastructure, I bring a builder's mindset to complex technical problems: understand the whole system, engineer for reliability, and own the result.
+**Try the [event reconciliation lab](examples/event-reconciliation/README.md).** What happens when a confirmation arrives before the request, or the same event arrives twice? Run the Python example offline and see how the result holds up across 120 delivery orders.
 
-[**CrabStar Ecosystem**](https://github.com/CrabStar-Ecosystem) · [**Engineering evidence**](ENGINEERING.md) · [**Runnable examples**](ENGINEERING.md#run-the-public-examples)
+Follow my work here for runnable engineering examples and the decisions behind CrabStar. [Explore the ecosystem](https://github.com/CrabStar-Ecosystem) · [Browse both labs](ENGINEERING.md#run-the-public-examples)
 
 [![Portfolio checks](https://github.com/darealrektrush/darealrektrush/actions/workflows/portfolio-checks.yml/badge.svg)](https://github.com/darealrektrush/darealrektrush/actions/workflows/portfolio-checks.yml)
 
