@@ -6,7 +6,14 @@ A small, inspectable demonstration of handling repeated and out-of-order events.
 
 ## Run it
 
-Use Python 3.10 or later. No installation, credentials or network access are needed.
+Use Git and Python 3.10 or later. To get a copy from a new working directory:
+
+```bash
+git clone https://github.com/darealrektrush/darealrektrush.git
+cd darealrektrush
+```
+
+From the repository root, run the demo and tests offline using the Python standard library.
 
 ```bash
 cd examples/event-reconciliation

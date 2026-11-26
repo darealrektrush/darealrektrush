@@ -12,8 +12,8 @@ The portfolio spans persistent identity, campaign economics, on-chain research a
 | Campaign and economic systems | [Project Q](case-studies/project-q.md) | Identity authority, partial outcomes and calculation/settlement boundaries |
 | AI and Solana research | [Shadow](case-studies/shadow.md) | Evidence quality, research reproducibility and staged execution boundaries |
 | Applications across devices | [Universe](case-studies/universe.md) | Web/native clients and shared-service authority |
-| Executable engineering | [Event Reconciliation Lab](examples/event-reconciliation/README.md) | Python source, synthetic events and seven tests |
-| Canonical identity claims | [Universal Profile Reconciliation Lab](examples/identity-reconciliation/README.md) | Synthetic verified claims, conflicting ownership, profile continuity and 12 tests |
+| Executable engineering | [Event Reconciliation Lab](examples/event-reconciliation/README.md) | See why a request stays pending, a confirmation stays unmatched, or the two reconcile. Includes seven tests. |
+| Canonical identity claims | [Universal Profile Reconciliation Lab](examples/identity-reconciliation/README.md) | Trace a pending claim, a verified link and a conflicting owner across 12 tests. |
 
 ## Run the public examples
 
