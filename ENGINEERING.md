@@ -15,6 +15,8 @@ The portfolio spans persistent identity, campaign economics, on-chain research a
 | Executable engineering | [Event Reconciliation Lab](examples/event-reconciliation/README.md) | See why a request stays pending, a confirmation stays unmatched, or the two reconcile. Includes seven tests. |
 | Canonical identity claims | [Universal Profile Reconciliation Lab](examples/identity-reconciliation/README.md) | Trace a pending claim, a verified link and a conflicting owner across 12 tests. |
 
+[When a confirmation arrives first](notes/when-a-confirmation-arrives-first.md) walks through the event lab with a duplicate request and an unmatched confirmation.
+
 ## Run the public examples
 
 From the repository root, with Python 3.12 or newer:
